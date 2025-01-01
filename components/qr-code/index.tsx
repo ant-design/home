@@ -13,6 +13,8 @@ import type { QRCodeProps, QRProps } from './interface';
 import QRcodeStatus from './QrcodeStatus';
 import useStyle from './style/index';
 
+export type { QRCodeProps, QRProps };
+
 const QRCode: React.FC<QRCodeProps> = (props) => {
   const [, token] = useToken();
   const {
@@ -32,9 +34,11 @@ const QRCode: React.FC<QRCodeProps> = (props) => {
     prefixCls: customizePrefixCls,
     bgColor = 'transparent',
     statusRender,
+    classNames: qrcodeClassNames,
+    styles,
     ...rest
   } = props;
-  const { getPrefixCls } = useContext<ConfigConsumerProps>(ConfigContext);
+  const { getPrefixCls, qrcode } = useContext<ConfigConsumerProps>(ConfigContext);
   const prefixCls = getPrefixCls('qrcode', customizePrefixCls);
 
   const [wrapCSSVar, hashId, cssVarCls] = useStyle(prefixCls);
@@ -84,21 +88,44 @@ const QRCode: React.FC<QRCodeProps> = (props) => {
     return null;
   }
 
-  const mergedCls = classNames(prefixCls, className, rootClassName, hashId, cssVarCls, {
-    [`${prefixCls}-borderless`]: !bordered,
-  });
+  const rootClassNames = classNames(
+    prefixCls,
+    className,
+    rootClassName,
+    hashId,
+    cssVarCls,
+    qrcode?.className,
+    qrcode?.classNames?.root,
+    qrcodeClassNames?.root,
+    {
+      [`${prefixCls}-borderless`]: !bordered,
+    },
+  );
 
-  const mergedStyle: React.CSSProperties = {
+  const rootStyle: React.CSSProperties = {
     backgroundColor: bgColor,
+    ...qrcode?.styles?.root,
+    ...qrcode?.style,
+    ...styles?.root,
     ...style,
     width: style?.width ?? size,
     height: style?.height ?? size,
   };
 
   return wrapCSSVar(
-    <div {...restProps} className={mergedCls} style={mergedStyle}>
+    <div {...restProps} className={rootClassNames} style={rootStyle}>
       {status !== 'active' && (
-        <div className={`${prefixCls}-mask`}>
+        <div
+          className={classNames(
+            `${prefixCls}-mask`,
+            qrcode?.classNames?.mask,
+            qrcodeClassNames?.mask,
+          )}
+          style={{
+            ...qrcode?.styles?.mask,
+            ...styles?.mask,
+          }}
+        >
           <QRcodeStatus
             prefixCls={prefixCls}
             locale={locale}

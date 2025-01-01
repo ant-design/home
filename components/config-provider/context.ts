@@ -37,6 +37,7 @@ import type { RenderEmptyHandler } from './defaultRenderEmpty';
 import type { TooltipProps } from '../tooltip';
 import type { PopoverProps } from '../popover';
 import type { PopconfirmProps } from '../popconfirm';
+import type { QRCodeProps } from '../qr-code';
 
 export const defaultPrefixCls = 'ant';
 export const defaultIconPrefixCls = 'anticon';
@@ -188,6 +189,8 @@ export type PopconfirmConfig = Pick<
   'className' | 'style' | 'styles' | 'classNames'
 >;
 
+export type QRcodeConfig = ComponentStyleConfig & Pick<QRCodeProps, 'classNames' | 'styles'>;
+
 export type SpinConfig = ComponentStyleConfig & Pick<SpinProps, 'indicator'>;
 
 export type InputNumberConfig = ComponentStyleConfig & Pick<InputNumberProps, 'variant'>;
@@ -304,6 +307,7 @@ export interface ConfigConsumerProps {
   tooltip?: TooltipConfig;
   popover?: PopoverConfig;
   popconfirm?: PopconfirmConfig;
+  qrcode?: QRcodeConfig;
   upload?: ComponentStyleConfig;
   notification?: NotificationConfig;
   tree?: ComponentStyleConfig;

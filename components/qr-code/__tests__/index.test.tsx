@@ -189,4 +189,31 @@ describe('QRCode test', () => {
     );
     expect(svgContainer.querySelector('svg')).toHaveAttribute('aria-label', ariaLabel);
   });
+
+  it('should apply custom styles to QRCode', () => {
+    const customClassNames = {
+      root: 'custom-root',
+      mask: 'custom-mask',
+    };
+
+    const customStyles = {
+      root: { borderRadius: '50px' },
+      mask: { backgroundColor: 'blue' },
+    };
+
+    const { container } = render(
+      <QRCode classNames={customClassNames} styles={customStyles} value="antd" status="loading" />,
+    );
+
+    const QRCodeElement = container.querySelector('.ant-qrcode') as HTMLElement;
+    const QRCodeMaskElement = container.querySelector('.ant-qrcode-mask') as HTMLElement;
+
+    // check classNames
+    expect(QRCodeElement.classList).toContain('custom-root');
+    expect(QRCodeMaskElement.classList).toContain('custom-mask');
+
+    // check styles
+    expect(QRCodeElement.style.borderRadius).toBe('50px');
+    expect(QRCodeMaskElement.style.backgroundColor).toBe('blue');
+  });
 });

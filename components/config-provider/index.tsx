@@ -59,6 +59,7 @@ import type {
   TreeSelectConfig,
   Variant,
   WaveConfig,
+  QRcodeConfig,
 } from './context';
 import {
   ConfigConsumer,
@@ -241,6 +242,7 @@ export interface ConfigProviderProps {
   tooltip?: TooltipConfig;
   popover?: PopoverConfig;
   popconfirm?: PopconfirmConfig;
+  qrcode?: QRcodeConfig;
 }
 
 interface ProviderChildrenProps extends ConfigProviderProps {
@@ -398,6 +400,7 @@ const ProviderChildren: React.FC<ProviderChildrenProps> = (props) => {
     tooltip,
     popover,
     popconfirm,
+    qrcode,
     floatButtonGroup,
     variant,
     inputNumber,
@@ -501,6 +504,7 @@ const ProviderChildren: React.FC<ProviderChildrenProps> = (props) => {
     tooltip,
     popover,
     popconfirm,
+    qrcode,
     floatButtonGroup,
     variant,
     inputNumber,
