@@ -22,20 +22,15 @@ export default function useTheme(
       ? {
           ...defaultConfig,
           hashed: parentTheme?.hashed ?? defaultConfig.hashed,
-          cssVar: parentTheme?.cssVar,
         }
       : parentTheme;
 
   const themeKey = useThemeKey();
 
   if (process.env.NODE_ENV !== 'production') {
-    const cssVarEnabled = themeConfig.cssVar || parentThemeConfig.cssVar;
-    const validKey = !!(
-      (typeof themeConfig.cssVar === 'object' && themeConfig.cssVar?.key) ||
-      themeKey
-    );
+    const validKey = !!themeKey;
     warning(
-      !cssVarEnabled || validKey,
+      validKey,
       'breaking',
       'Missing key in `cssVar` config. Please upgrade to React 18 or set `cssVar.key` manually in each ConfigProvider inside `cssVar` enabled ConfigProvider.',
     );
@@ -60,11 +55,9 @@ export default function useTheme(
       });
 
       const cssVarKey = `css-var-${themeKey.replace(/:/g, '')}`;
-      const mergedCssVar = (themeConfig.cssVar ?? parentThemeConfig.cssVar) && {
+      const mergedCssVar = {
         prefix: config?.prefixCls, // Same as prefixCls by default
-        ...(typeof parentThemeConfig.cssVar === 'object' ? parentThemeConfig.cssVar : {}),
-        ...(typeof themeConfig.cssVar === 'object' ? themeConfig.cssVar : {}),
-        key: (typeof themeConfig.cssVar === 'object' && themeConfig.cssVar?.key) || cssVarKey,
+        key: cssVarKey,
       };
 
       // Base token

@@ -10,6 +10,7 @@ import { globSync } from 'glob';
 import { JSDOM } from 'jsdom';
 import MockDate from 'mockdate';
 import type { HTTPRequest } from 'puppeteer';
+import rcWarning from 'rc-util/lib/warning';
 import ReactDOMServer from 'react-dom/server';
 
 import { App, ConfigProvider, theme } from '../../components';
@@ -143,11 +144,7 @@ export default function imageTest(
 
       // Do inject open trigger
       if (openTriggerClassName) {
-        element = (
-          <TriggerMockContext.Provider value={{ popupVisible: true }}>
-            {element}
-          </TriggerMockContext.Provider>
-        );
+        element = <TriggerMockContext value={{ popupVisible: true }}>{element}</TriggerMockContext>;
       }
 
       let html: string;
@@ -244,7 +241,7 @@ export default function imageTest(
       `[CSS Var] component image screenshot should correct ${key}`,
       `.${key}.css-var`,
       <div style={{ background: key === 'dark' ? '#000' : '', padding: `24px 12px` }} key={key}>
-        <ConfigProvider theme={{ ...configTheme, cssVar: true }}>{component}</ConfigProvider>
+        <ConfigProvider theme={{ ...configTheme }}>{component}</ConfigProvider>
       </div>,
     );
   });

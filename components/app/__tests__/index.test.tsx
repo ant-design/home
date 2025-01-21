@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { SmileOutlined } from '@ant-design/icons';
-import ConfigProvider from 'antd/es/config-provider';
 import type { NotificationConfig } from 'antd/es/notification/interface';
 
 import App from '..';
@@ -242,18 +241,6 @@ describe('App', () => {
       );
       expect(errorSpy).not.toHaveBeenCalled();
       expect(container.querySelector('.ant-app')).toBeFalsy();
-    });
-
-    it('should warn if component is false and cssVarCls is not empty', () => {
-      render(
-        <ConfigProvider theme={{ cssVar: true }}>
-          <App component={false} />
-        </ConfigProvider>,
-      );
-
-      expect(errorSpy).toHaveBeenCalledWith(
-        'Warning: [antd: App] When using cssVar, ensure `component` is assigned a valid React component string.',
-      );
     });
   });
 });

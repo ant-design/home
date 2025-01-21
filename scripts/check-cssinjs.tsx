@@ -31,7 +31,7 @@ async function checkCSSVar() {
     render(Component: any) {
       ReactDOMServer.renderToString(
         <StyleProvider linters={[NaNLinter]}>
-          <ConfigProvider theme={{ cssVar: true, hashed: false }}>
+          <ConfigProvider theme={{ hashed: false }}>
             <Component />
           </ConfigProvider>
         </StyleProvider>,
