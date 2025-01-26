@@ -28,7 +28,7 @@ const AvatarContextProvider: React.FC<AvatarContextType & ContextProps> = (props
   );
 };
 
-export interface GroupProps {
+export interface AvatarGroupProps {
   className?: string;
   rootClassName?: string;
   children?: React.ReactNode;
@@ -55,7 +55,7 @@ export interface GroupProps {
   shape?: 'circle' | 'square';
 }
 
-const Group: React.FC<GroupProps> = (props) => {
+const AvatarGroup: React.FC<AvatarGroupProps> = (props) => {
   const { getPrefixCls, direction } = React.useContext(ConfigContext);
   const {
     prefixCls: customizePrefixCls,
@@ -150,4 +150,4 @@ const Group: React.FC<GroupProps> = (props) => {
   );
 };
 
-export default Group;
+export default AvatarGroup;

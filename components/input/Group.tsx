@@ -8,7 +8,7 @@ import type { FormItemStatusContextProps } from '../form/context';
 import { FormItemInputContext } from '../form/context';
 import useStyle from './style';
 
-export interface GroupProps {
+export interface InputGroupProps {
   className?: string;
   size?: 'large' | 'small' | 'default';
   children?: React.ReactNode;
@@ -21,7 +21,7 @@ export interface GroupProps {
   compact?: boolean;
 }
 
-const Group: React.FC<GroupProps> = (props) => {
+const InputGroup: React.FC<InputGroupProps> = (props) => {
   const { getPrefixCls, direction } = useContext(ConfigContext);
   const { prefixCls: customizePrefixCls, className } = props;
   const prefixCls = getPrefixCls('input-group', customizePrefixCls);
@@ -71,4 +71,4 @@ const Group: React.FC<GroupProps> = (props) => {
   );
 };
 
-export default Group;
+export default InputGroup;

@@ -11,7 +11,7 @@ import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
 import Button from '../../button';
 import DatePicker from '../../date-picker';
 import Input from '../../input';
-import Group from '../../input/Group';
+import InputGroup from '../../input/Group';
 import Radio from '../../radio';
 import Switch from '../../switch';
 import { isTooltipOpen } from './util';
@@ -273,10 +273,10 @@ describe('Tooltip', () => {
     const ref = React.createRef<any>();
     const { container } = render(
       <Tooltip title="hello" onOpenChange={onOpenChange} ref={ref}>
-        <Group>
+        <InputGroup>
           <Input style={{ width: '50%' }} />
           <Input style={{ width: '50%' }} />
-        </Group>
+        </InputGroup>
       </Tooltip>,
     );
 

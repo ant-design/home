@@ -1,18 +1,22 @@
-import Group from './Group';
+import InputGroup from './Group';
 import InternalInput from './Input';
 import OTP from './OTP';
 import Password from './Password';
 import Search from './Search';
 import TextArea from './TextArea';
 
-export type { GroupProps } from './Group';
+export type {
+  InputGroupProps,
+  /** @deprecated Please use `InputGroupProps` */
+  InputGroupProps as GroupProps,
+} from './Group';
 export type { InputProps, InputRef } from './Input';
 export type { PasswordProps } from './Password';
 export type { SearchProps } from './Search';
 export type { TextAreaProps } from './TextArea';
 
 type CompoundedComponent = typeof InternalInput & {
-  Group: typeof Group;
+  Group: typeof InputGroup;
   Search: typeof Search;
   TextArea: typeof TextArea;
   Password: typeof Password;
@@ -21,7 +25,7 @@ type CompoundedComponent = typeof InternalInput & {
 
 const Input = InternalInput as CompoundedComponent;
 
-Input.Group = Group;
+Input.Group = InputGroup;
 Input.Search = Search;
 Input.TextArea = TextArea;
 Input.Password = Password;

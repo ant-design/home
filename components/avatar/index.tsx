@@ -1,16 +1,20 @@
 import InternalAvatar from './avatar';
-import Group from './group';
+import AvatarGroup from './group';
 
 export type { AvatarProps } from './avatar';
-export type { GroupProps } from './group';
-export { Group };
+export type {
+  AvatarGroupProps,
+  /** @deprecated Please use `AvatarGroupProps` */
+  AvatarGroupProps as GroupProps,
+} from './group';
+export { AvatarGroup as Group };
 
 type CompoundedComponent = typeof InternalAvatar & {
-  Group: typeof Group;
+  Group: typeof AvatarGroup;
 };
 
 const Avatar = InternalAvatar as CompoundedComponent;
 
-Avatar.Group = Group;
+Avatar.Group = AvatarGroup;
 
 export default Avatar;
