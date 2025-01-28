@@ -143,7 +143,8 @@ export type CollapseConfig = ComponentStyleConfig &
 
 export type MenuConfig = ComponentStyleConfig & Pick<MenuProps, 'expandIcon'>;
 
-export type TourConfig = Pick<TourProps, 'closeIcon'>;
+export type TourConfig = ComponentStyleConfig &
+  Pick<TourProps, 'closeIcon' | 'classNames' | 'styles'>;
 
 export type DescriptionsConfig = ComponentStyleConfig &
   Pick<DescriptionsProps, 'classNames' | 'styles'>;

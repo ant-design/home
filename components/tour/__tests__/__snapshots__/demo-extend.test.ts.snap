@@ -83,10 +83,10 @@ Array [
       style="position: absolute; top: 0px; left: 0px;"
     />
     <div
-      class="ant-tour-content"
+      class="ant-tour-pannel"
     >
       <div
-        class="ant-tour-inner"
+        class="ant-tour-section"
       >
         <button
           class="ant-tour-close"
@@ -152,7 +152,7 @@ Array [
             />
           </div>
           <div
-            class="ant-tour-buttons"
+            class="ant-tour-actions"
           >
             <button
               class="ant-btn ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-btn-sm ant-tour-next-btn"
@@ -464,10 +464,10 @@ exports[`renders components/tour/demo/gap.tsx extend context correctly 1`] = `
       style="position: absolute; top: 0px; left: 0px;"
     />
     <div
-      class="ant-tour-content"
+      class="ant-tour-pannel"
     >
       <div
-        class="ant-tour-inner"
+        class="ant-tour-section"
       >
         <button
           class="ant-tour-close"
@@ -520,7 +520,7 @@ exports[`renders components/tour/demo/gap.tsx extend context correctly 1`] = `
           class="ant-tour-footer"
         >
           <div
-            class="ant-tour-buttons"
+            class="ant-tour-actions"
           >
             <button
               class="ant-btn ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-btn-sm ant-tour-next-btn"
@@ -623,10 +623,10 @@ Array [
       style="position: absolute; top: 0px; left: 0px;"
     />
     <div
-      class="ant-tour-content"
+      class="ant-tour-pannel"
     >
       <div
-        class="ant-tour-inner"
+        class="ant-tour-section"
       >
         <button
           class="ant-tour-close"
@@ -678,7 +678,7 @@ Array [
             </span>
           </div>
           <div
-            class="ant-tour-buttons"
+            class="ant-tour-actions"
           >
             <button
               class="ant-btn ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-btn-sm ant-tour-next-btn"
@@ -781,10 +781,10 @@ Array [
       style="position: absolute; top: 0px; left: 0px;"
     />
     <div
-      class="ant-tour-content"
+      class="ant-tour-pannel"
     >
       <div
-        class="ant-tour-inner"
+        class="ant-tour-section"
       >
         <button
           class="ant-tour-close"
@@ -850,7 +850,7 @@ Array [
             />
           </div>
           <div
-            class="ant-tour-buttons"
+            class="ant-tour-actions"
           >
             <button
               class="ant-btn ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-btn-sm ant-tour-next-btn"
@@ -953,10 +953,10 @@ Array [
       style="position: absolute; top: 0px; left: 0px;"
     />
     <div
-      class="ant-tour-content"
+      class="ant-tour-pannel"
     >
       <div
-        class="ant-tour-inner"
+        class="ant-tour-section"
       >
         <button
           class="ant-tour-close"
@@ -1022,7 +1022,7 @@ Array [
             />
           </div>
           <div
-            class="ant-tour-buttons"
+            class="ant-tour-actions"
           >
             <button
               class="ant-btn ant-btn-default ant-btn-color-default ant-btn-variant-outlined ant-btn-sm ant-tour-next-btn"
@@ -1057,10 +1057,10 @@ Array [
     style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box; z-index: 1001;"
   >
     <div
-      class="ant-tour-content"
+      class="ant-tour-pannel"
     >
       <div
-        class="ant-tour-inner"
+        class="ant-tour-section"
       >
         <button
           class="ant-tour-close"
@@ -1118,7 +1118,7 @@ Array [
             />
           </div>
           <div
-            class="ant-tour-buttons"
+            class="ant-tour-actions"
           >
             <button
               class="ant-btn ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-btn-sm ant-tour-next-btn"
@@ -1149,14 +1149,14 @@ exports[`renders components/tour/demo/render-panel.tsx extend context correctly 
       class="ant-tour-arrow"
     />
     <div
-      class="ant-tour-content"
+      class="ant-tour-pannel"
     >
       <div
         class="ant-tour-inner"
         role="tooltip"
       >
         <div
-          class="ant-tour-content"
+          class="ant-tour-pannel"
         >
           <div
             class="ant-tour-inner"
@@ -1250,14 +1250,14 @@ exports[`renders components/tour/demo/render-panel.tsx extend context correctly 
       class="ant-tour-arrow"
     />
     <div
-      class="ant-tour-content"
+      class="ant-tour-pannel"
     >
       <div
         class="ant-tour-inner"
         role="tooltip"
       >
         <div
-          class="ant-tour-content"
+          class="ant-tour-pannel"
         >
           <div
             class="ant-tour-inner"
@@ -1370,14 +1370,14 @@ exports[`renders components/tour/demo/render-panel.tsx extend context correctly 
       class="ant-tour-arrow"
     />
     <div
-      class="ant-tour-content"
+      class="ant-tour-pannel"
     >
       <div
         class="ant-tour-inner"
         role="tooltip"
       >
         <div
-          class="ant-tour-content"
+          class="ant-tour-pannel"
         >
           <div
             class="ant-tour-inner"

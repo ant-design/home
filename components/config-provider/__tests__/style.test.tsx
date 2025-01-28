@@ -1571,7 +1571,7 @@ describe('ConfigProvider support style and className props', () => {
         <Tour steps={[{ title: 'test' }]} open />
       </ConfigProvider>,
     );
-    const selectors = '.ant-tour .ant-tour-inner .ant-tour-close .cp-test-closeIcon';
+    const selectors = '.ant-tour .ant-tour-section .ant-tour-close .cp-test-closeIcon';
     const element = container.querySelector<HTMLSpanElement>(selectors);
     expect(element).toBeTruthy();
   });

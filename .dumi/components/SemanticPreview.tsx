@@ -68,15 +68,20 @@ export interface SemanticPreviewProps {
   semantics: { name: string; desc: string; version?: string }[];
   children: React.ReactElement<any>;
   height?: number;
+  component?: string;
 }
 
 const SemanticPreview: React.FC<SemanticPreviewProps> = (props) => {
-  const { semantics = [], children, height } = props;
+  const { semantics = [], children, height, component } = props;
   const { token } = theme.useToken();
 
   // ======================= Semantic =======================
   const getMarkClassName = React.useCallback(
     (semanticKey: string) => `semantic-mark-${semanticKey}`,
+    [],
+  );
+  const getComponentClassName = React.useCallback(
+    (semanticKey: string) => (semanticKey === 'root' ? component : `${component}-${semanticKey}`),
     [],
   );
 
@@ -107,7 +112,9 @@ const SemanticPreview: React.FC<SemanticPreviewProps> = (props) => {
 
   React.useEffect(() => {
     if (hoverSemantic) {
-      const targetClassName = getMarkClassName(hoverSemantic);
+      const targetClassName = component
+        ? getComponentClassName(hoverSemantic)
+        : getMarkClassName(hoverSemantic);
       const targetElement = containerRef.current?.querySelector<HTMLElement>(`.${targetClassName}`);
       const containerRect = containerRef.current?.getBoundingClientRect();
       const targetRect = targetElement?.getBoundingClientRect();

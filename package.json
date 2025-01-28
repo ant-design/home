@@ -120,7 +120,7 @@
     "@rc-component/segmented": "~1.0.0",
     "@rc-component/table": "~1.0.0",
     "@rc-component/tooltip": "~1.0.0",
-    "@rc-component/tour": "~1.15.1",
+    "@rc-component/tour": "~2.0.0",
     "@rc-component/trigger": "^2.2.6",
     "@rc-component/util": "^1.0.1",
     "classnames": "^2.5.1",

@@ -163,7 +163,7 @@ const {
 | tag | Set Tag common props | { className?: string, style?: React.CSSProperties, closeIcon?: React.ReactNode } | - | 5.7.0, closeIcon: 5.14.0 |
 | timeline | Set Timeline common props | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | timePicker | Set TimePicker common props | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
-| tour | Set Tour common props | { closeIcon?: React.ReactNode } | - | 5.14.0 |
+| tour | Set Tour common props | { closeIcon?: React.ReactNode, className?: string, style?: React.CSSProperties, classNames?: [TourProps\["classNames"\]](/components/tour#api), styles?: [TourProps\["styles"\]](/components/tour#api) } | - | 5.14.0, `classNames`、`styles`、`className`、`style`: 6.0.0 |
 | tooltip | Set Tooltip common props | { className?: string, style?: React.CSSProperties, classNames?:[Tooltip\["classNames"\]](/components/tooltip#api), styles?: [Tooltip\["styles"\]](/components/tooltip#api), arrow: boolean \| { pointAtCenter: boolean } } | - | 5.23.0, arrow: 6.0.0 |
 | popover | Set Popover common props | { className?: string, style?: React.CSSProperties, classNames?:[Popover\["classNames"\]](/components/popover#api), styles?: [Popover\["styles"\]](/components/popover#api), arrow: boolean \| { pointAtCenter: boolean } } | - | 5.23.0, arrow: 6.0.0 |
 | popconfirm | Set Popconfirm common props | { className?: string, style?: React.CSSProperties, classNames?:[Popconfirm\["classNames"\]](/components/popconfirm#api), styles?: [Popconfirm\["styles"\]](/components/popconfirm#api), arrow: boolean \| { pointAtCenter: boolean } } | - | 5.23.0, arrow: 6.0.0 |

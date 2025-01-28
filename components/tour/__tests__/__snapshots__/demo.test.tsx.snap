@@ -543,10 +543,10 @@ exports[`renders components/tour/demo/render-panel.tsx correctly 1`] = `
         role="tooltip"
       >
         <div
-          class="ant-tour-content"
+          class="ant-tour-pannel"
         >
           <div
-            class="ant-tour-inner"
+            class="ant-tour-section"
           >
             <button
               class="ant-tour-close"
@@ -613,7 +613,7 @@ exports[`renders components/tour/demo/render-panel.tsx correctly 1`] = `
                 />
               </div>
               <div
-                class="ant-tour-buttons"
+                class="ant-tour-actions"
               >
                 <button
                   class="ant-btn ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-btn-sm ant-tour-next-btn"
@@ -644,10 +644,10 @@ exports[`renders components/tour/demo/render-panel.tsx correctly 1`] = `
         role="tooltip"
       >
         <div
-          class="ant-tour-content"
+          class="ant-tour-pannel"
         >
           <div
-            class="ant-tour-inner"
+            class="ant-tour-section"
           >
             <button
               class="ant-tour-close"
@@ -725,7 +725,7 @@ exports[`renders components/tour/demo/render-panel.tsx correctly 1`] = `
                 />
               </div>
               <div
-                class="ant-tour-buttons"
+                class="ant-tour-actions"
               >
                 <button
                   class="ant-btn ant-btn-default ant-btn-color-default ant-btn-variant-outlined ant-btn-sm ant-tour-prev-btn"
@@ -764,10 +764,10 @@ exports[`renders components/tour/demo/render-panel.tsx correctly 1`] = `
         role="tooltip"
       >
         <div
-          class="ant-tour-content"
+          class="ant-tour-pannel"
         >
           <div
-            class="ant-tour-inner"
+            class="ant-tour-section"
           >
             <button
               class="ant-tour-close"
@@ -831,7 +831,7 @@ exports[`renders components/tour/demo/render-panel.tsx correctly 1`] = `
                 />
               </div>
               <div
-                class="ant-tour-buttons"
+                class="ant-tour-actions"
               >
                 <button
                   class="ant-btn ant-btn-default ant-btn-color-default ant-btn-variant-outlined ant-btn-sm ant-btn-background-ghost ant-tour-prev-btn"
