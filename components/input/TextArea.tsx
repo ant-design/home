@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { forwardRef } from 'react';
+import type {
+  TextAreaProps as RcTextAreaProps,
+  TextAreaRef as RcTextAreaRef,
+} from '@rc-component/textarea';
+import RcTextArea from '@rc-component/textarea';
 import classNames from 'classnames';
-import type { TextAreaProps as RcTextAreaProps, TextAreaRef as RcTextAreaRef } from 'rc-textarea';
-import RcTextArea from 'rc-textarea';
 
 import getAllowClear from '../_util/getAllowClear';
 import type { InputStatus } from '../_util/statusUtils';

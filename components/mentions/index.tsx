@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { composeRef } from '@rc-component/util/lib/ref';
-import classNames from 'classnames';
-import RcMentions from 'rc-mentions';
+import RcMentions from '@rc-component/mentions';
 import type {
   DataDrivenOptionProps as MentionsOptionProps,
   MentionsProps as RcMentionsProps,
   MentionsRef as RcMentionsRef,
-} from 'rc-mentions/lib/Mentions';
+} from '@rc-component/mentions/lib/Mentions';
+import { composeRef } from '@rc-component/util/lib/ref';
+import classNames from 'classnames';
 
 import getAllowClear from '../_util/getAllowClear';
 import genPurePanel from '../_util/PurePanel';
@@ -31,7 +31,7 @@ function loadingFilterOption() {
 
 export type MentionPlacement = 'top' | 'bottom';
 
-export type { DataDrivenOptionProps as MentionsOptionProps } from 'rc-mentions/lib/Mentions';
+export type { DataDrivenOptionProps as MentionsOptionProps } from '@rc-component/mentions/lib/Mentions';
 
 export interface OptionProps {
   value: string;

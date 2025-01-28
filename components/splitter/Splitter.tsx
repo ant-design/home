@@ -1,8 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
+import ResizeObserver from '@rc-component/resize-observer';
 import useEvent from '@rc-component/util/lib/hooks/useEvent';
 import classNames from 'classnames';
-import ResizeObserver from 'rc-resize-observer';
 
 import type { GetProp } from '../_util/type';
 import { devUseWarning } from '../_util/warning';

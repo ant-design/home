@@ -92,3 +92,10 @@ jest.mock('react', () => {
 
   return cloneReact;
 });
+
+// Mock ResizeObserver
+global.ResizeObserver = class ResizeObserver {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+};

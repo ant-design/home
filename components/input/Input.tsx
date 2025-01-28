@@ -1,9 +1,9 @@
 import React, { forwardRef, useContext, useEffect, useRef } from 'react';
+import type { InputRef, InputProps as RcInputProps } from '@rc-component/input';
+import RcInput from '@rc-component/input';
+import { InputFocusOptions, triggerFocus } from '@rc-component/input/lib/utils/commonUtils';
 import { composeRef } from '@rc-component/util/lib/ref';
 import classNames from 'classnames';
-import type { InputRef, InputProps as RcInputProps } from 'rc-input';
-import RcInput from 'rc-input';
-import { InputFocusOptions, triggerFocus } from 'rc-input/lib/utils/commonUtils';
 
 import ContextIsolator from '../_util/ContextIsolator';
 import getAllowClear from '../_util/getAllowClear';

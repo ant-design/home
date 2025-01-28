@@ -1,9 +1,9 @@
 import * as React from 'react';
 import DownOutlined from '@ant-design/icons/DownOutlined';
 import UpOutlined from '@ant-design/icons/UpOutlined';
+import type { InputNumberProps as RcInputNumberProps, ValueType } from '@rc-component/input-number';
+import RcInputNumber from '@rc-component/input-number';
 import classNames from 'classnames';
-import type { InputNumberProps as RcInputNumberProps, ValueType } from 'rc-input-number';
-import RcInputNumber from 'rc-input-number';
 
 import ContextIsolator from '../_util/ContextIsolator';
 import type { InputStatus } from '../_util/statusUtils';

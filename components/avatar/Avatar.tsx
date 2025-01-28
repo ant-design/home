@@ -1,7 +1,7 @@
 import * as React from 'react';
+import ResizeObserver from '@rc-component/resize-observer';
 import { composeRef } from '@rc-component/util/lib/ref';
 import classNames from 'classnames';
-import ResizeObserver from 'rc-resize-observer';
 
 import type { Breakpoint } from '../_util/responsiveObserver';
 import { responsiveArray } from '../_util/responsiveObserver';

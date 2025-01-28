@@ -1,6 +1,6 @@
 import React from 'react';
+import ResizeObserver from '@rc-component/resize-observer';
 import classNames from 'classnames';
-import ResizeObserver from 'rc-resize-observer';
 
 import throttleByAnimationFrame from '../_util/throttleByAnimationFrame';
 import type { ConfigConsumerProps } from '../config-provider';
