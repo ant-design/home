@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Masonry should render correctly 1`] = `
+<div
+  style="width: 820px;"
+>
+  <div
+    class="ant-masonry"
+    data-testid="masonry-container"
+    style="height: 480px;"
+  >
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-0"
+      data-column="0"
+      data-height="150"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 150px; --ant-masonry-item-translate-x: 0px; --ant-masonry-item-translate-y: 0px;"
+    >
+      <div
+        style="height: 150px;"
+      >
+        1
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-1"
+      data-column="1"
+      data-height="30"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 30px; --ant-masonry-item-translate-x: 273.33px; --ant-masonry-item-translate-y: 0px;"
+    >
+      <div
+        style="height: 30px;"
+      >
+        2
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-2"
+      data-column="2"
+      data-height="90"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 90px; --ant-masonry-item-translate-x: 546.66px; --ant-masonry-item-translate-y: 0px;"
+    >
+      <div
+        style="height: 90px;"
+      >
+        3
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-3"
+      data-column="1"
+      data-height="70"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 70px; --ant-masonry-item-translate-x: 273.33px; --ant-masonry-item-translate-y: 30px;"
+    >
+      <div
+        style="height: 70px;"
+      >
+        4
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-4"
+      data-column="2"
+      data-height="110"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 110px; --ant-masonry-item-translate-x: 546.66px; --ant-masonry-item-translate-y: 90px;"
+    >
+      <div
+        style="height: 110px;"
+      >
+        5
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-5"
+      data-column="1"
+      data-height="150"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 150px; --ant-masonry-item-translate-x: 273.33px; --ant-masonry-item-translate-y: 100px;"
+    >
+      <div
+        style="height: 150px;"
+      >
+        6
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-6"
+      data-column="0"
+      data-height="130"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 130px; --ant-masonry-item-translate-x: 0px; --ant-masonry-item-translate-y: 150px;"
+    >
+      <div
+        style="height: 130px;"
+      >
+        7
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-7"
+      data-column="2"
+      data-height="80"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 80px; --ant-masonry-item-translate-x: 546.66px; --ant-masonry-item-translate-y: 200px;"
+    >
+      <div
+        style="height: 80px;"
+      >
+        8
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-8"
+      data-column="1"
+      data-height="50"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 50px; --ant-masonry-item-translate-x: 273.33px; --ant-masonry-item-translate-y: 250px;"
+    >
+      <div
+        style="height: 50px;"
+      >
+        9
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-9"
+      data-column="0"
+      data-height="90"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 90px; --ant-masonry-item-translate-x: 0px; --ant-masonry-item-translate-y: 280px;"
+    >
+      <div
+        style="height: 90px;"
+      >
+        10
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-10"
+      data-column="2"
+      data-height="100"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 100px; --ant-masonry-item-translate-x: 546.66px; --ant-masonry-item-translate-y: 280px;"
+    >
+      <div
+        style="height: 100px;"
+      >
+        11
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-11"
+      data-column="1"
+      data-height="150"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 150px; --ant-masonry-item-translate-x: 273.33px; --ant-masonry-item-translate-y: 300px;"
+    >
+      <div
+        style="height: 150px;"
+      >
+        12
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-12"
+      data-column="0"
+      data-height="30"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 30px; --ant-masonry-item-translate-x: 0px; --ant-masonry-item-translate-y: 370px;"
+    >
+      <div
+        style="height: 30px;"
+      >
+        13
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-13"
+      data-column="2"
+      data-height="50"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 50px; --ant-masonry-item-translate-x: 546.66px; --ant-masonry-item-translate-y: 380px;"
+    >
+      <div
+        style="height: 50px;"
+      >
+        14
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-14"
+      data-column="0"
+      data-height="80"
+      data-width="273.33"
+      style="--ant-masonry-item-width: 273.33px; --ant-masonry-item-height: 80px; --ant-masonry-item-translate-x: 0px; --ant-masonry-item-translate-y: 400px;"
+    >
+      <div
+        style="height: 80px;"
+      >
+        15
+      </div>
+    </div>
+  </div>
+</div>
+`;

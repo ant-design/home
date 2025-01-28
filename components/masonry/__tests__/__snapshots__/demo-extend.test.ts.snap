@@ -1,0 +1,980 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders components/masonry/demo/DemoItem.tsx extend context correctly 1`] = `
+<div
+  style="background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+/>
+`;
+
+exports[`renders components/masonry/demo/DemoItem.tsx extend context correctly 2`] = `[]`;
+
+exports[`renders components/masonry/demo/basic.tsx extend context correctly 1`] = `
+<div
+  class="ant-masonry"
+  data-testid="masonry-container"
+  style="height: 440px;"
+>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-0"
+    data-column="0"
+    data-height="150"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 150px; --ant-masonry-item-translate-x: 0px; --ant-masonry-item-translate-y: 0px;"
+  >
+    <div
+      style="height: 150px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      1
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-1"
+    data-column="1"
+    data-height="30"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 30px; --ant-masonry-item-translate-x: 4px; --ant-masonry-item-translate-y: 0px;"
+  >
+    <div
+      style="height: 30px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      2
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-2"
+    data-column="2"
+    data-height="90"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 90px; --ant-masonry-item-translate-x: 8px; --ant-masonry-item-translate-y: 0px;"
+  >
+    <div
+      style="height: 90px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      3
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-3"
+    data-column="3"
+    data-height="70"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 70px; --ant-masonry-item-translate-x: 12px; --ant-masonry-item-translate-y: 0px;"
+  >
+    <div
+      style="height: 70px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      4
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-4"
+    data-column="1"
+    data-height="110"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 110px; --ant-masonry-item-translate-x: 4px; --ant-masonry-item-translate-y: 46px;"
+  >
+    <div
+      style="height: 110px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      5
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-5"
+    data-column="3"
+    data-height="150"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 150px; --ant-masonry-item-translate-x: 12px; --ant-masonry-item-translate-y: 86px;"
+  >
+    <div
+      style="height: 150px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      6
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-6"
+    data-column="2"
+    data-height="130"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 130px; --ant-masonry-item-translate-x: 8px; --ant-masonry-item-translate-y: 106px;"
+  >
+    <div
+      style="height: 130px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      7
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-7"
+    data-column="0"
+    data-height="80"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 80px; --ant-masonry-item-translate-x: 0px; --ant-masonry-item-translate-y: 166px;"
+  >
+    <div
+      style="height: 80px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      8
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-8"
+    data-column="1"
+    data-height="50"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 50px; --ant-masonry-item-translate-x: 4px; --ant-masonry-item-translate-y: 172px;"
+  >
+    <div
+      style="height: 50px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      9
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-9"
+    data-column="1"
+    data-height="90"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 90px; --ant-masonry-item-translate-x: 4px; --ant-masonry-item-translate-y: 238px;"
+  >
+    <div
+      style="height: 90px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      10
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-10"
+    data-column="2"
+    data-height="100"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 100px; --ant-masonry-item-translate-x: 8px; --ant-masonry-item-translate-y: 252px;"
+  >
+    <div
+      style="height: 100px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      11
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-11"
+    data-column="3"
+    data-height="150"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 150px; --ant-masonry-item-translate-x: 12px; --ant-masonry-item-translate-y: 252px;"
+  >
+    <div
+      style="height: 150px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      12
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-12"
+    data-column="0"
+    data-height="30"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 30px; --ant-masonry-item-translate-x: 0px; --ant-masonry-item-translate-y: 262px;"
+  >
+    <div
+      style="height: 30px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      13
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-13"
+    data-column="0"
+    data-height="50"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 50px; --ant-masonry-item-translate-x: 0px; --ant-masonry-item-translate-y: 308px;"
+  >
+    <div
+      style="height: 50px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      14
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-14"
+    data-column="1"
+    data-height="80"
+    data-width="0"
+    style="--ant-masonry-item-width: -12px; --ant-masonry-item-height: 80px; --ant-masonry-item-translate-x: 4px; --ant-masonry-item-translate-y: 344px;"
+  >
+    <div
+      style="height: 80px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      15
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders components/masonry/demo/basic.tsx extend context correctly 2`] = `[]`;
+
+exports[`renders components/masonry/demo/image.tsx extend context correctly 1`] = `
+<div
+  class="ant-masonry"
+  data-testid="masonry-container"
+  style="height: 0px;"
+>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-0"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1510001618818-4b4e3d86bf0f"
+      src="https://images.unsplash.com/photo-1510001618818-4b4e3d86bf0f?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-1"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1507513319174-e556268bb244"
+      src="https://images.unsplash.com/photo-1507513319174-e556268bb244?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-2"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2"
+      src="https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-3"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1492778297155-7be4c83960c7"
+      src="https://images.unsplash.com/photo-1492778297155-7be4c83960c7?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-4"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1508062878650-88b52897f298"
+      src="https://images.unsplash.com/photo-1508062878650-88b52897f298?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-5"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1506158278516-d720e72406fc"
+      src="https://images.unsplash.com/photo-1506158278516-d720e72406fc?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-6"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1552203274-e3c7bd771d26"
+      src="https://images.unsplash.com/photo-1552203274-e3c7bd771d26?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-7"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1528163186890-de9b86b54b51"
+      src="https://images.unsplash.com/photo-1528163186890-de9b86b54b51?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-8"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1727423304224-6d2fd99b864c"
+      src="https://images.unsplash.com/photo-1727423304224-6d2fd99b864c?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-9"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1675090391405-432434e23595"
+      src="https://images.unsplash.com/photo-1675090391405-432434e23595?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-10"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1554196967-97a8602084d9"
+      src="https://images.unsplash.com/photo-1554196967-97a8602084d9?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-11"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1491961865842-98f7befd1a60"
+      src="https://images.unsplash.com/photo-1491961865842-98f7befd1a60?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-12"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1721728613411-d56d2ddda959"
+      src="https://images.unsplash.com/photo-1721728613411-d56d2ddda959?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-13"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1731901245099-20ac7f85dbaa"
+      src="https://images.unsplash.com/photo-1731901245099-20ac7f85dbaa?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-14"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1617694455303-59af55af7e58"
+      src="https://images.unsplash.com/photo-1617694455303-59af55af7e58?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-15"
+    data-height="0"
+    data-width="0"
+  >
+    <img
+      alt="https://images.unsplash.com/photo-1709198165282-1dab551df890"
+      src="https://images.unsplash.com/photo-1709198165282-1dab551df890?w=180&auto=format"
+      style="width: 100%; display: block;"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders components/masonry/demo/image.tsx extend context correctly 2`] = `[]`;
+
+exports[`renders components/masonry/demo/responsive.tsx extend context correctly 1`] = `
+<div
+  class="ant-masonry"
+  data-testid="masonry-container"
+  style="height: 0px;"
+>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-0"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 120px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      1
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-1"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 45px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      2
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-2"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 85px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      3
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-3"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 160px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      4
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-4"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 95px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      5
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-5"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 140px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      6
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-6"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 75px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      7
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-7"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 110px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      8
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-8"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 65px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      9
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-9"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 130px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      10
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-10"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 90px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      11
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-11"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 145px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      12
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-12"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 55px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      13
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-13"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 100px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      14
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-14"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 80px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      15
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders components/masonry/demo/responsive.tsx extend context correctly 2`] = `[]`;
+
+exports[`renders components/masonry/demo/sequential.tsx extend context correctly 1`] = `
+<div
+  class="ant-masonry"
+  data-testid="masonry-container"
+  style="height: 0px;"
+>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-0"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 135px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      1
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-1"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 60px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      2
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-2"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 105px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      3
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-3"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 180px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      4
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-4"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 75px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      5
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-5"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 85px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      6
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-6"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 115px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      7
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-7"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 70px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      8
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-8"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 165px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      9
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-9"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 40px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      10
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-10"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 120px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      11
+    </div>
+  </div>
+  <div
+    class="ant-masonry-item"
+    data-ant-masonry-item="item-11"
+    data-height="0"
+    data-width="0"
+  >
+    <div
+      style="height: 90px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+    >
+      12
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders components/masonry/demo/sequential.tsx extend context correctly 2`] = `[]`;
+
+exports[`renders components/masonry/demo/update.tsx extend context correctly 1`] = `
+Array [
+  <div
+    class="ant-masonry"
+    data-testid="masonry-container"
+    style="height: 0px;"
+  >
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-0"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 150px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        1
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-1"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 30px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        2
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-2"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 90px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        3
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-3"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 70px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        4
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-4"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 110px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        5
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-5"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 150px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        6
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-6"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 130px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        7
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-7"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 80px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        8
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-8"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 50px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        9
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-9"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 90px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        10
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-10"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 100px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        11
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-11"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 150px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        12
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-12"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 30px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        13
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-13"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 50px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        14
+      </div>
+    </div>
+    <div
+      class="ant-masonry-item"
+      data-ant-masonry-item="item-14"
+      data-height="0"
+      data-width="0"
+    >
+      <div
+        style="height: 80px; background: rgb(240, 240, 240); border-radius: 4px; padding: 4px; width: 100%;"
+      >
+        15
+      </div>
+    </div>
+  </div>,
+  <button
+    class="ant-btn ant-btn-default ant-btn-color-default ant-btn-variant-outlined"
+    type="button"
+  >
+    <span>
+      Add Item
+    </span>
+  </button>,
+]
+`;
+
+exports[`renders components/masonry/demo/update.tsx extend context correctly 2`] = `[]`;

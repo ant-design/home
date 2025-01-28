@@ -87,6 +87,8 @@ export { default as Layout } from './layout';
 export type { LayoutProps, SiderProps } from './layout';
 export { default as List } from './list';
 export type { ListProps } from './list';
+export { default as Masonry } from './masonry';
+export type { MasonryProps } from './masonry';
 export { default as Mentions } from './mentions';
 export type { MentionProps, MentionsProps } from './mentions';
 export { default as Menu } from './menu';
