@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import Alert from './Alert';
 
-interface ErrorBoundaryProps {
+export interface ErrorBoundaryProps {
   message?: React.ReactNode;
   description?: React.ReactNode;
   children?: React.ReactNode;
