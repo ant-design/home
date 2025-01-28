@@ -48,6 +48,7 @@ Common props ref：[Common props](/docs/react/common-props)
 | rowKey | Item's unique value, could be an Item's key which holds a unique value of type `React.Key` or function that receives Item and returns a `React.Key` | `keyof` T \| (item: T) => `React.Key` | `"key"` |  |
 | size | Size of list | `default` \| `large` \| `small` | `default` |  |
 | split | Toggles rendering of the split under the list item | boolean | true |  |
+| styles | Semantic DOM style | Record<SemanticDOM, CSSProperties | - | 5.15.0 |
 
 ### pagination
 

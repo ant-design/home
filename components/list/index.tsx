@@ -63,6 +63,11 @@ export interface ListProps<T> {
   header?: React.ReactNode;
   footer?: React.ReactNode;
   locale?: ListLocale;
+
+  styles?: {
+    header?: React.CSSProperties;
+    footer?: React.CSSProperties;
+  };
 }
 
 export interface ListLocale {
@@ -90,6 +95,7 @@ function InternalList<T>(
     rowKey,
     renderItem,
     locale,
+    styles,
     ...rest
   }: ListProps<T>,
   ref: React.ForwardedRef<HTMLDivElement>,
@@ -292,12 +298,20 @@ function InternalList<T>(
     <ListContext.Provider value={contextValue}>
       <div ref={ref} style={{ ...contextStyle, ...style }} className={classString} {...rest}>
         {(paginationPosition === 'top' || paginationPosition === 'both') && paginationContent}
-        {header && <div className={`${prefixCls}-header`}>{header}</div>}
+        {header && (
+          <div className={`${prefixCls}-header`} style={styles?.header}>
+            {header}
+          </div>
+        )}
         <Spin {...loadingProp}>
           {childrenContent}
           {children}
         </Spin>
-        {footer && <div className={`${prefixCls}-footer`}>{footer}</div>}
+        {footer && (
+          <div className={`${prefixCls}-footer`} style={styles?.footer}>
+            {footer}
+          </div>
+        )}
         {loadMore ||
           ((paginationPosition === 'bottom' || paginationPosition === 'both') && paginationContent)}
       </div>
