@@ -10,7 +10,7 @@ import DisabledContext from '../config-provider/DisabledContext';
 import useSize from '../config-provider/hooks/useSize';
 import type { SizeType } from '../config-provider/SizeContext';
 import { useCompactItemContext } from '../space/Compact';
-import Group, { GroupSizeContext } from './button-group';
+import Group, { GroupSizeContext } from './ButtonGroup';
 import type {
   ButtonColorType,
   ButtonHTMLType,

@@ -2,7 +2,7 @@ import * as React from 'react';
 import useState from '@rc-component/util/lib/hooks/useState';
 
 import Button from '../button';
-import type { ButtonProps, LegacyButtonType } from '../button/button';
+import type { ButtonProps, LegacyButtonType } from '../button/Button';
 import { convertLegacyProps } from '../button/buttonHelpers';
 
 export interface ActionButtonProps {

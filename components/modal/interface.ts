@@ -2,7 +2,7 @@ import type React from 'react';
 import type { DialogProps } from '@rc-component/dialog';
 
 import { Breakpoint } from '../_util/responsiveObserver';
-import type { ButtonProps, LegacyButtonType } from '../button/button';
+import type { ButtonProps, LegacyButtonType } from '../button/Button';
 import type { DirectionType } from '../config-provider';
 
 export type SemanticName =

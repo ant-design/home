@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { act, fireEvent, render } from '../../../tests/utils';
-import Button from '../button';
+import Button from '../Button';
 
 const specialDelay = 9529;
 const Content = () => {

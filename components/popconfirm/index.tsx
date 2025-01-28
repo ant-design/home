@@ -5,7 +5,7 @@ import omit from '@rc-component/util/lib/omit';
 import classNames from 'classnames';
 
 import type { RenderFunction } from '../_util/getRenderPropValue';
-import type { ButtonProps, LegacyButtonType } from '../button/button';
+import type { ButtonProps, LegacyButtonType } from '../button/Button';
 import { ConfigContext } from '../config-provider';
 import type { PopoverProps } from '../popover';
 import Popover from '../popover';

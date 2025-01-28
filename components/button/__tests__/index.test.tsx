@@ -10,7 +10,7 @@ import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
 import ConfigProvider from '../../config-provider';
 import theme from '../../theme';
 import { PresetColors } from '../../theme/interface';
-import type { BaseButtonProps } from '../button';
+import type { BaseButtonProps } from '../Button';
 
 describe('Button', () => {
   mountTest(Button);
