@@ -30945,8 +30945,9 @@ exports[`renders components/form/demo/variant.tsx extend context correctly 1`] =
                     type="radio"
                   />
                   <div
-                    aria-selected="false"
+                    aria-checked="false"
                     class="ant-segmented-item-label"
+                    role="radio"
                     title="outlined"
                   >
                     outlined
@@ -30962,8 +30963,9 @@ exports[`renders components/form/demo/variant.tsx extend context correctly 1`] =
                     type="radio"
                   />
                   <div
-                    aria-selected="true"
+                    aria-checked="true"
                     class="ant-segmented-item-label"
+                    role="radio"
                     title="filled"
                   >
                     filled
@@ -30978,8 +30980,9 @@ exports[`renders components/form/demo/variant.tsx extend context correctly 1`] =
                     type="radio"
                   />
                   <div
-                    aria-selected="false"
+                    aria-checked="false"
                     class="ant-segmented-item-label"
+                    role="radio"
                     title="borderless"
                   >
                     borderless
@@ -30994,8 +30997,9 @@ exports[`renders components/form/demo/variant.tsx extend context correctly 1`] =
                     type="radio"
                   />
                   <div
-                    aria-selected="false"
+                    aria-checked="false"
                     class="ant-segmented-item-label"
+                    role="radio"
                     title="underlined"
                   >
                     underlined
