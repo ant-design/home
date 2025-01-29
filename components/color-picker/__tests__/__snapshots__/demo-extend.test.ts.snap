@@ -4017,8 +4017,9 @@ exports[`renders components/color-picker/demo/line-gradient.tsx extend context c
                           type="radio"
                         />
                         <div
-                          aria-selected="false"
+                          aria-checked="false"
                           class="ant-segmented-item-label"
+                          role="radio"
                           title="Single"
                         >
                           Single
@@ -4033,8 +4034,9 @@ exports[`renders components/color-picker/demo/line-gradient.tsx extend context c
                           type="radio"
                         />
                         <div
-                          aria-selected="true"
+                          aria-checked="true"
                           class="ant-segmented-item-label"
+                          role="radio"
                           title="Gradient"
                         >
                           Gradient
