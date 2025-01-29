@@ -2025,8 +2025,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="start"
         >
           start
@@ -2042,8 +2043,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="center"
         >
           center
@@ -2058,8 +2060,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="end"
         >
           end
