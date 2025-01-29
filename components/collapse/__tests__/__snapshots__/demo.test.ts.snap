@@ -2,7 +2,7 @@
 
 exports[`renders components/collapse/demo/accordion.tsx correctly 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
   role="tablist"
 >
   <div
@@ -130,7 +130,7 @@ exports[`renders components/collapse/demo/accordion.tsx correctly 1`] = `
 
 exports[`renders components/collapse/demo/basic.tsx correctly 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
 >
   <div
     class="ant-collapse-item ant-collapse-item-active"
@@ -271,7 +271,7 @@ exports[`renders components/collapse/demo/basic.tsx correctly 1`] = `
 
 exports[`renders components/collapse/demo/borderless.tsx correctly 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start ant-collapse-borderless"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start ant-collapse-borderless"
 >
   <div
     class="ant-collapse-item ant-collapse-item-active"
@@ -418,7 +418,7 @@ exports[`renders components/collapse/demo/collapsible.tsx correctly 1`] = `
     class="ant-space-item"
   >
     <div
-      class="ant-collapse ant-collapse-icon-position-start"
+      class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
     >
       <div
         class="ant-collapse-item ant-collapse-item-active"
@@ -484,7 +484,7 @@ exports[`renders components/collapse/demo/collapsible.tsx correctly 1`] = `
     class="ant-space-item"
   >
     <div
-      class="ant-collapse ant-collapse-icon-position-start"
+      class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
     >
       <div
         class="ant-collapse-item ant-collapse-item-active"
@@ -546,7 +546,7 @@ exports[`renders components/collapse/demo/collapsible.tsx correctly 1`] = `
     class="ant-space-item"
   >
     <div
-      class="ant-collapse ant-collapse-icon-position-start"
+      class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
     >
       <div
         class="ant-collapse-item ant-collapse-item-disabled"
@@ -595,7 +595,7 @@ exports[`renders components/collapse/demo/collapsible.tsx correctly 1`] = `
 
 exports[`renders components/collapse/demo/component-token.tsx correctly 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
 >
   <div
     class="ant-collapse-item"
@@ -722,7 +722,7 @@ exports[`renders components/collapse/demo/component-token.tsx correctly 1`] = `
 
 exports[`renders components/collapse/demo/custom.tsx correctly 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start ant-collapse-borderless"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start ant-collapse-borderless"
   style="background:#ffffff"
 >
   <div
@@ -868,7 +868,7 @@ exports[`renders components/collapse/demo/custom.tsx correctly 1`] = `
 exports[`renders components/collapse/demo/extra.tsx correctly 1`] = `
 Array [
   <div
-    class="ant-collapse ant-collapse-icon-position-start"
+    class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
   >
     <div
       class="ant-collapse-item ant-collapse-item-active"
@@ -1150,7 +1150,7 @@ Array [
 
 exports[`renders components/collapse/demo/ghost.tsx correctly 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start ant-collapse-ghost"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start ant-collapse-ghost"
 >
   <div
     class="ant-collapse-item ant-collapse-item-active"
@@ -1291,7 +1291,7 @@ exports[`renders components/collapse/demo/ghost.tsx correctly 1`] = `
 
 exports[`renders components/collapse/demo/mix.tsx correctly 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
 >
   <div
     class="ant-collapse-item"
@@ -1418,7 +1418,7 @@ exports[`renders components/collapse/demo/mix.tsx correctly 1`] = `
 
 exports[`renders components/collapse/demo/noarrow.tsx correctly 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
 >
   <div
     class="ant-collapse-item ant-collapse-item-active"
@@ -1507,7 +1507,7 @@ Array [
     </span>
   </div>,
   <div
-    class="ant-collapse ant-collapse-icon-position-start"
+    class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
   >
     <div
       class="ant-collapse-item"
@@ -1561,7 +1561,7 @@ Array [
     </span>
   </div>,
   <div
-    class="ant-collapse ant-collapse-icon-position-start ant-collapse-small"
+    class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start ant-collapse-small"
   >
     <div
       class="ant-collapse-item"
@@ -1615,7 +1615,7 @@ Array [
     </span>
   </div>,
   <div
-    class="ant-collapse ant-collapse-icon-position-start ant-collapse-large"
+    class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start ant-collapse-large"
   >
     <div
       class="ant-collapse-item"

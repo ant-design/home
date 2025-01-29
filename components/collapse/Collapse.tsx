@@ -20,6 +20,7 @@ import useStyle from './style';
 /** @deprecated Please use `start` | `end` instead */
 type ExpandIconPositionLegacy = 'left' | 'right';
 export type ExpandIconPosition = 'start' | 'end' | ExpandIconPositionLegacy | undefined;
+export type ExpandVerticalIconPosition = 'start' | 'center' | 'end';
 
 export interface CollapseProps extends Pick<RcCollapseProps, 'items'> {
   activeKey?: Array<string | number> | string | number;
@@ -35,6 +36,7 @@ export interface CollapseProps extends Pick<RcCollapseProps, 'items'> {
   prefixCls?: string;
   expandIcon?: (panelProps: PanelProps) => React.ReactNode;
   expandIconPosition?: ExpandIconPosition;
+  expandIconVerticalPosition?: ExpandVerticalIconPosition;
   ghost?: boolean;
   size?: SizeType;
   collapsible?: CollapsibleType;
@@ -75,6 +77,7 @@ const Collapse = React.forwardRef<HTMLDivElement, CollapseProps>((props, ref) =>
     ghost,
     size: customizeSize,
     expandIconPosition = 'start',
+    expandIconVerticalPosition = 'start',
     children,
     expandIcon,
   } = props;
@@ -132,6 +135,7 @@ const Collapse = React.forwardRef<HTMLDivElement, CollapseProps>((props, ref) =>
 
   const collapseClassName = classNames(
     `${prefixCls}-icon-position-${mergedExpandIconPosition}`,
+    `${prefixCls}-icon-vertical-position-${expandIconVerticalPosition}`,
     {
       [`${prefixCls}-borderless`]: !bordered,
       [`${prefixCls}-rtl`]: direction === 'rtl',

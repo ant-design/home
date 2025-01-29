@@ -2,7 +2,7 @@
 
 exports[`Collapse Collapse.Panel usage 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start ant-collapse-borderless"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start ant-collapse-borderless"
 >
   <div
     class="ant-collapse-item"
@@ -89,7 +89,7 @@ exports[`Collapse Collapse.Panel usage 1`] = `
 
 exports[`Collapse could override default openMotion 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
 >
   <div
     class="ant-collapse-item ant-collapse-item-active"
@@ -146,7 +146,7 @@ exports[`Collapse could override default openMotion 1`] = `
 
 exports[`Collapse should render extra node of panel 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
 >
   <div
     class="ant-collapse-item"
@@ -251,7 +251,7 @@ exports[`Collapse should render extra node of panel 1`] = `
 
 exports[`Collapse should support remove expandIcon 1`] = `
 <div
-  class="ant-collapse ant-collapse-icon-position-start"
+  class="ant-collapse ant-collapse-icon-position-start ant-collapse-icon-vertical-position-start"
 >
   <div
     class="ant-collapse-item"

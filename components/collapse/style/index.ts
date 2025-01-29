@@ -252,6 +252,24 @@ export const genBaseStyle: GenerateStyle<CollapseToken> = (token) => {
           },
         },
       },
+      [`&${componentCls}-icon-vertical-position-center`]: {
+        [`& > ${componentCls}-item`]: {
+          [`> ${componentCls}-header`]: {
+            [`${componentCls}-expand-icon`]: {
+              alignSelf: 'center',
+            },
+          },
+        },
+      },
+      [`&${componentCls}-icon-vertical-position-end`]: {
+        [`& > ${componentCls}-item`]: {
+          [`> ${componentCls}-header`]: {
+            [`${componentCls}-expand-icon`]: {
+              alignSelf: 'end',
+            },
+          },
+        },
+      },
     },
   };
 };
