@@ -26,8 +26,9 @@ exports[`renders components/flex/demo/align.tsx extend context correctly 1`] = `
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="flex-start"
         >
           flex-start
@@ -42,8 +43,9 @@ exports[`renders components/flex/demo/align.tsx extend context correctly 1`] = `
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="center"
         >
           center
@@ -58,8 +60,9 @@ exports[`renders components/flex/demo/align.tsx extend context correctly 1`] = `
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="flex-end"
         >
           flex-end
@@ -74,8 +77,9 @@ exports[`renders components/flex/demo/align.tsx extend context correctly 1`] = `
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="space-between"
         >
           space-between
@@ -90,8 +94,9 @@ exports[`renders components/flex/demo/align.tsx extend context correctly 1`] = `
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="space-around"
         >
           space-around
@@ -106,8 +111,9 @@ exports[`renders components/flex/demo/align.tsx extend context correctly 1`] = `
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="space-evenly"
         >
           space-evenly
@@ -137,8 +143,9 @@ exports[`renders components/flex/demo/align.tsx extend context correctly 1`] = `
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="flex-start"
         >
           flex-start
@@ -153,8 +160,9 @@ exports[`renders components/flex/demo/align.tsx extend context correctly 1`] = `
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="center"
         >
           center
@@ -169,8 +177,9 @@ exports[`renders components/flex/demo/align.tsx extend context correctly 1`] = `
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="flex-end"
         >
           flex-end

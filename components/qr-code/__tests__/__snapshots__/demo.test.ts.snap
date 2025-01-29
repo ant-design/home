@@ -364,8 +364,9 @@ exports[`renders components/qr-code/demo/download.tsx correctly 1`] = `
             type="radio"
           />
           <div
-            aria-selected="true"
+            aria-checked="true"
             class="ant-segmented-item-label"
+            role="radio"
             title="canvas"
           >
             canvas
@@ -380,8 +381,9 @@ exports[`renders components/qr-code/demo/download.tsx correctly 1`] = `
             type="radio"
           />
           <div
-            aria-selected="false"
+            aria-checked="false"
             class="ant-segmented-item-label"
+            role="radio"
             title="svg"
           >
             svg
@@ -453,8 +455,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="L"
         >
           L
@@ -469,8 +472,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="M"
         >
           M
@@ -485,8 +489,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Q"
         >
           Q
@@ -501,8 +506,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="H"
         >
           H
