@@ -20,8 +20,9 @@ exports[`renders components/segmented/demo/basic.tsx extend context correctly 1`
         type="radio"
       />
       <div
-        aria-selected="true"
+        aria-checked="true"
         class="ant-segmented-item-label"
+        role="radio"
         title="Daily"
       >
         Daily
@@ -36,8 +37,9 @@ exports[`renders components/segmented/demo/basic.tsx extend context correctly 1`
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Weekly"
       >
         Weekly
@@ -52,8 +54,9 @@ exports[`renders components/segmented/demo/basic.tsx extend context correctly 1`
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Monthly"
       >
         Monthly
@@ -68,8 +71,9 @@ exports[`renders components/segmented/demo/basic.tsx extend context correctly 1`
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Quarterly"
       >
         Quarterly
@@ -84,8 +88,9 @@ exports[`renders components/segmented/demo/basic.tsx extend context correctly 1`
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Yearly"
       >
         Yearly
@@ -117,8 +122,9 @@ exports[`renders components/segmented/demo/block.tsx extend context correctly 1`
         type="radio"
       />
       <div
-        aria-selected="true"
+        aria-checked="true"
         class="ant-segmented-item-label"
+        role="radio"
         title="123"
       >
         123
@@ -133,8 +139,9 @@ exports[`renders components/segmented/demo/block.tsx extend context correctly 1`
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="456"
       >
         456
@@ -149,8 +156,9 @@ exports[`renders components/segmented/demo/block.tsx extend context correctly 1`
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="longtext-longtext-longtext-longtext"
       >
         longtext-longtext-longtext-longtext
@@ -182,8 +190,9 @@ exports[`renders components/segmented/demo/componentToken.tsx extend context cor
         type="radio"
       />
       <div
-        aria-selected="true"
+        aria-checked="true"
         class="ant-segmented-item-label"
+        role="radio"
         title="Daily"
       >
         Daily
@@ -198,8 +207,9 @@ exports[`renders components/segmented/demo/componentToken.tsx extend context cor
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Weekly"
       >
         Weekly
@@ -214,8 +224,9 @@ exports[`renders components/segmented/demo/componentToken.tsx extend context cor
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Monthly"
       >
         Monthly
@@ -230,8 +241,9 @@ exports[`renders components/segmented/demo/componentToken.tsx extend context cor
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Quarterly"
       >
         Quarterly
@@ -246,8 +258,9 @@ exports[`renders components/segmented/demo/componentToken.tsx extend context cor
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Yearly"
       >
         Yearly
@@ -279,8 +292,9 @@ exports[`renders components/segmented/demo/controlled.tsx extend context correct
         type="radio"
       />
       <div
-        aria-selected="true"
+        aria-checked="true"
         class="ant-segmented-item-label"
+        role="radio"
         title="Map"
       >
         Map
@@ -295,8 +309,9 @@ exports[`renders components/segmented/demo/controlled.tsx extend context correct
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Transit"
       >
         Transit
@@ -311,8 +326,9 @@ exports[`renders components/segmented/demo/controlled.tsx extend context correct
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Satellite"
       >
         Satellite
@@ -345,8 +361,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="AND"
         >
           AND
@@ -361,8 +378,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="OR"
         >
           OR
@@ -377,8 +395,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="NOT"
         >
           NOT
@@ -406,8 +425,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="AND"
         >
           AND
@@ -422,8 +442,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="OR"
         >
           OR
@@ -438,8 +459,9 @@ Array [
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="NOT"
         >
           NOT
@@ -475,8 +497,9 @@ exports[`renders components/segmented/demo/custom.tsx extend context correctly 1
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
         >
           <div
             style="padding: 4px;"
@@ -503,8 +526,9 @@ exports[`renders components/segmented/demo/custom.tsx extend context correctly 1
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
         >
           <div
             style="padding: 4px;"
@@ -535,8 +559,9 @@ exports[`renders components/segmented/demo/custom.tsx extend context correctly 1
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
         >
           <div
             style="padding: 4px;"
@@ -592,8 +617,9 @@ exports[`renders components/segmented/demo/custom.tsx extend context correctly 1
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
         >
           <div
             style="padding: 4px;"
@@ -616,8 +642,9 @@ exports[`renders components/segmented/demo/custom.tsx extend context correctly 1
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
         >
           <div
             style="padding: 4px;"
@@ -640,8 +667,9 @@ exports[`renders components/segmented/demo/custom.tsx extend context correctly 1
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
         >
           <div
             style="padding: 4px;"
@@ -664,8 +692,9 @@ exports[`renders components/segmented/demo/custom.tsx extend context correctly 1
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
         >
           <div
             style="padding: 4px;"
@@ -709,8 +738,9 @@ exports[`renders components/segmented/demo/disabled.tsx extend context correctly
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="Map"
         >
           Map
@@ -726,8 +756,9 @@ exports[`renders components/segmented/demo/disabled.tsx extend context correctly
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Transit"
         >
           Transit
@@ -743,8 +774,9 @@ exports[`renders components/segmented/demo/disabled.tsx extend context correctly
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Satellite"
         >
           Satellite
@@ -771,8 +803,9 @@ exports[`renders components/segmented/demo/disabled.tsx extend context correctly
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="Daily"
         >
           Daily
@@ -788,8 +821,9 @@ exports[`renders components/segmented/demo/disabled.tsx extend context correctly
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Weekly"
         >
           Weekly
@@ -804,8 +838,9 @@ exports[`renders components/segmented/demo/disabled.tsx extend context correctly
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Monthly"
         >
           Monthly
@@ -821,8 +856,9 @@ exports[`renders components/segmented/demo/disabled.tsx extend context correctly
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Quarterly"
         >
           Quarterly
@@ -837,8 +873,9 @@ exports[`renders components/segmented/demo/disabled.tsx extend context correctly
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Yearly"
         >
           Yearly
@@ -874,8 +911,9 @@ exports[`renders components/segmented/demo/dynamic.tsx extend context correctly 
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="Daily"
         >
           Daily
@@ -890,8 +928,9 @@ exports[`renders components/segmented/demo/dynamic.tsx extend context correctly 
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Weekly"
         >
           Weekly
@@ -906,8 +945,9 @@ exports[`renders components/segmented/demo/dynamic.tsx extend context correctly 
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Monthly"
         >
           Monthly
@@ -948,8 +988,9 @@ exports[`renders components/segmented/demo/icon-only.tsx extend context correctl
         type="radio"
       />
       <div
-        aria-selected="true"
+        aria-checked="true"
         class="ant-segmented-item-label"
+        role="radio"
       >
         <span
           class="ant-segmented-item-icon"
@@ -985,8 +1026,9 @@ exports[`renders components/segmented/demo/icon-only.tsx extend context correctl
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
       >
         <span
           class="ant-segmented-item-icon"
@@ -1042,8 +1084,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="Daily"
         >
           Daily
@@ -1058,8 +1101,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Weekly"
         >
           Weekly
@@ -1074,8 +1118,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Monthly"
         >
           Monthly
@@ -1090,8 +1135,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Quarterly"
         >
           Quarterly
@@ -1106,8 +1152,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Yearly"
         >
           Yearly
@@ -1134,8 +1181,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="Daily"
         >
           Daily
@@ -1150,8 +1198,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Weekly"
         >
           Weekly
@@ -1166,8 +1215,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Monthly"
         >
           Monthly
@@ -1182,8 +1232,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Quarterly"
         >
           Quarterly
@@ -1198,8 +1249,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Yearly"
         >
           Yearly
@@ -1226,8 +1278,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="true"
+          aria-checked="true"
           class="ant-segmented-item-label"
+          role="radio"
           title="Daily"
         >
           Daily
@@ -1242,8 +1295,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Weekly"
         >
           Weekly
@@ -1258,8 +1312,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Monthly"
         >
           Monthly
@@ -1274,8 +1329,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Quarterly"
         >
           Quarterly
@@ -1290,8 +1346,9 @@ exports[`renders components/segmented/demo/size.tsx extend context correctly 1`]
           type="radio"
         />
         <div
-          aria-selected="false"
+          aria-checked="false"
           class="ant-segmented-item-label"
+          role="radio"
           title="Yearly"
         >
           Yearly
@@ -1329,8 +1386,9 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
             type="radio"
           />
           <div
-            aria-selected="true"
+            aria-checked="true"
             class="ant-segmented-item-label"
+            role="radio"
             title="Daily"
           >
             Daily
@@ -1345,8 +1403,9 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
             type="radio"
           />
           <div
-            aria-selected="false"
+            aria-checked="false"
             class="ant-segmented-item-label"
+            role="radio"
             title="Weekly"
           >
             Weekly
@@ -1361,8 +1420,9 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
             type="radio"
           />
           <div
-            aria-selected="false"
+            aria-checked="false"
             class="ant-segmented-item-label"
+            role="radio"
             title="Monthly"
           >
             Monthly
@@ -1400,8 +1460,9 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
             type="radio"
           />
           <div
-            aria-selected="true"
+            aria-checked="true"
             class="ant-segmented-item-label"
+            role="radio"
             title="Daily"
           >
             Daily
@@ -1416,8 +1477,9 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
             type="radio"
           />
           <div
-            aria-selected="false"
+            aria-checked="false"
             class="ant-segmented-item-label"
+            role="radio"
             title="Weekly"
           >
             Weekly
@@ -1432,8 +1494,9 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
             type="radio"
           />
           <div
-            aria-selected="false"
+            aria-checked="false"
             class="ant-segmented-item-label"
+            role="radio"
             title="Monthly"
           >
             Monthly
@@ -1470,8 +1533,9 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
             type="radio"
           />
           <div
-            aria-selected="true"
+            aria-checked="true"
             class="ant-segmented-item-label"
+            role="radio"
             title="Daily"
           >
             Daily
@@ -1486,8 +1550,9 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
             type="radio"
           />
           <div
-            aria-selected="false"
+            aria-checked="false"
             class="ant-segmented-item-label"
+            role="radio"
             title="Weekly"
           >
             Weekly
@@ -1502,8 +1567,9 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
             type="radio"
           />
           <div
-            aria-selected="false"
+            aria-checked="false"
             class="ant-segmented-item-label"
+            role="radio"
             title="Monthly"
           >
             Monthly
@@ -1657,8 +1723,9 @@ exports[`renders components/segmented/demo/vertical.tsx extend context correctly
         type="radio"
       />
       <div
-        aria-selected="true"
+        aria-checked="true"
         class="ant-segmented-item-label"
+        role="radio"
       >
         <span
           class="ant-segmented-item-icon"
@@ -1694,8 +1761,9 @@ exports[`renders components/segmented/demo/vertical.tsx extend context correctly
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
       >
         <span
           class="ant-segmented-item-icon"
@@ -1748,8 +1816,9 @@ exports[`renders components/segmented/demo/with-icon.tsx extend context correctl
         type="radio"
       />
       <div
-        aria-selected="true"
+        aria-checked="true"
         class="ant-segmented-item-label"
+        role="radio"
       >
         <span
           class="ant-segmented-item-icon"
@@ -1788,8 +1857,9 @@ exports[`renders components/segmented/demo/with-icon.tsx extend context correctl
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
       >
         <span
           class="ant-segmented-item-icon"
@@ -1845,8 +1915,9 @@ exports[`renders components/segmented/demo/with-name.tsx extend context correctl
         type="radio"
       />
       <div
-        aria-selected="true"
+        aria-checked="true"
         class="ant-segmented-item-label"
+        role="radio"
         title="Daily"
       >
         Daily
@@ -1861,8 +1932,9 @@ exports[`renders components/segmented/demo/with-name.tsx extend context correctl
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Weekly"
       >
         Weekly
@@ -1877,8 +1949,9 @@ exports[`renders components/segmented/demo/with-name.tsx extend context correctl
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Monthly"
       >
         Monthly
@@ -1893,8 +1966,9 @@ exports[`renders components/segmented/demo/with-name.tsx extend context correctl
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Quarterly"
       >
         Quarterly
@@ -1909,8 +1983,9 @@ exports[`renders components/segmented/demo/with-name.tsx extend context correctl
         type="radio"
       />
       <div
-        aria-selected="false"
+        aria-checked="false"
         class="ant-segmented-item-label"
+        role="radio"
         title="Yearly"
       >
         Yearly
