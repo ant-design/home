@@ -120,8 +120,7 @@ const Col = React.forwardRef<HTMLDivElement, ColProps>((props, ref) => {
   // Horizontal gutter use padding
   if (gutter && gutter[0] > 0) {
     const horizontalGutter = gutter[0] / 2;
-    mergedStyle.paddingLeft = horizontalGutter;
-    mergedStyle.paddingRight = horizontalGutter;
+    mergedStyle.paddingInline = horizontalGutter;
   }
 
   if (flex) {

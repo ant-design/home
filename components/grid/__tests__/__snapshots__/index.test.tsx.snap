@@ -3,17 +3,17 @@
 exports[`Grid renders wrapped Col correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left: -10px; margin-right: -10px;"
+  style="margin-inline: -10px;"
 >
   <div>
     <div
       class="ant-col ant-col-12"
-      style="padding-left: 10px; padding-right: 10px;"
+      style="padding-inline: 10px;"
     />
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 10px; padding-right: 10px;"
+    style="padding-inline: 10px;"
   />
 </div>
 `;
@@ -45,6 +45,6 @@ exports[`Grid should render Row 1`] = `
 exports[`Grid when typeof gutter is object array in large screen 1`] = `
 <div
   class="ant-row"
-  style="margin-left: -20px; margin-right: -20px; row-gap: 400px;"
+  style="margin-inline: -20px; row-gap: 400px;"
 />
 `;

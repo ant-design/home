@@ -6403,11 +6403,11 @@ exports[`renders components/calendar/demo/customize-header.tsx extend context co
       </h4>
       <div
         class="ant-row"
-        style="margin-left: -4px; margin-right: -4px;"
+        style="margin-inline: -4px;"
       >
         <div
           class="ant-col"
-          style="padding-left: 4px; padding-right: 4px;"
+          style="padding-inline: 4px;"
         >
           <div
             class="ant-radio-group ant-radio-group-outline ant-radio-group-small"
@@ -6461,7 +6461,7 @@ exports[`renders components/calendar/demo/customize-header.tsx extend context co
         </div>
         <div
           class="ant-col"
-          style="padding-left: 4px; padding-right: 4px;"
+          style="padding-inline: 4px;"
         >
           <div
             class="ant-select ant-select-sm ant-select-outlined my-year-select ant-select-single ant-select-show-arrow"
@@ -6936,7 +6936,7 @@ exports[`renders components/calendar/demo/customize-header.tsx extend context co
         </div>
         <div
           class="ant-col"
-          style="padding-left: 4px; padding-right: 4px;"
+          style="padding-inline: 4px;"
         >
           <div
             class="ant-select ant-select-sm ant-select-outlined ant-select-single ant-select-show-arrow"

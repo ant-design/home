@@ -3,11 +3,11 @@
 exports[`renders components/statistic/demo/animated.tsx extend context correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left: -8px; margin-right: -8px;"
+  style="margin-inline: -8px;"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -36,7 +36,7 @@ exports[`renders components/statistic/demo/animated.tsx extend context correctly
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -71,11 +71,11 @@ exports[`renders components/statistic/demo/animated.tsx extend context correctly
 exports[`renders components/statistic/demo/basic.tsx extend context correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left: -8px; margin-right: -8px;"
+  style="margin-inline: -8px;"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -106,7 +106,7 @@ exports[`renders components/statistic/demo/basic.tsx extend context correctly 1`
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -151,7 +151,7 @@ exports[`renders components/statistic/demo/basic.tsx extend context correctly 1`
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -186,11 +186,11 @@ exports[`renders components/statistic/demo/basic.tsx extend context correctly 2`
 exports[`renders components/statistic/demo/card.tsx extend context correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left: -8px; margin-right: -8px;"
+  style="margin-inline: -8px;"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-card"
@@ -263,7 +263,7 @@ exports[`renders components/statistic/demo/card.tsx extend context correctly 1`]
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-card"
@@ -342,11 +342,11 @@ exports[`renders components/statistic/demo/card.tsx extend context correctly 2`]
 exports[`renders components/statistic/demo/component-token.tsx extend context correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left: -8px; margin-right: -8px;"
+  style="margin-inline: -8px;"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -377,7 +377,7 @@ exports[`renders components/statistic/demo/component-token.tsx extend context co
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -422,7 +422,7 @@ exports[`renders components/statistic/demo/component-token.tsx extend context co
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -457,11 +457,11 @@ exports[`renders components/statistic/demo/component-token.tsx extend context co
 exports[`renders components/statistic/demo/countdown.tsx extend context correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left: -8px; margin-right: -8px;"
+  style="margin-inline: -8px;"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -488,7 +488,7 @@ exports[`renders components/statistic/demo/countdown.tsx extend context correctl
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -515,7 +515,7 @@ exports[`renders components/statistic/demo/countdown.tsx extend context correctl
   </div>
   <div
     class="ant-col ant-col-24"
-    style="padding-left: 8px; padding-right: 8px; margin-top: 32px;"
+    style="padding-inline: 8px; margin-top: 32px;"
   >
     <div
       class="ant-statistic"
@@ -542,7 +542,7 @@ exports[`renders components/statistic/demo/countdown.tsx extend context correctl
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -575,11 +575,11 @@ exports[`renders components/statistic/demo/countdown.tsx extend context correctl
 exports[`renders components/statistic/demo/unit.tsx extend context correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left: -8px; margin-right: -8px;"
+  style="margin-inline: -8px;"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"
@@ -633,7 +633,7 @@ exports[`renders components/statistic/demo/unit.tsx extend context correctly 1`]
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-statistic"

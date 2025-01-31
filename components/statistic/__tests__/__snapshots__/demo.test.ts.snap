@@ -3,11 +3,11 @@
 exports[`renders components/statistic/demo/animated.tsx correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left:-8px;margin-right:-8px"
+  style="margin-inline:-8px"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -34,7 +34,7 @@ exports[`renders components/statistic/demo/animated.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -65,11 +65,11 @@ exports[`renders components/statistic/demo/animated.tsx correctly 1`] = `
 exports[`renders components/statistic/demo/basic.tsx correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left:-8px;margin-right:-8px"
+  style="margin-inline:-8px"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -100,7 +100,7 @@ exports[`renders components/statistic/demo/basic.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -145,7 +145,7 @@ exports[`renders components/statistic/demo/basic.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -178,11 +178,11 @@ exports[`renders components/statistic/demo/basic.tsx correctly 1`] = `
 exports[`renders components/statistic/demo/card.tsx correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left:-8px;margin-right:-8px"
+  style="margin-inline:-8px"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-card"
@@ -255,7 +255,7 @@ exports[`renders components/statistic/demo/card.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-card"
@@ -332,11 +332,11 @@ exports[`renders components/statistic/demo/card.tsx correctly 1`] = `
 exports[`renders components/statistic/demo/component-token.tsx correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left:-8px;margin-right:-8px"
+  style="margin-inline:-8px"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -367,7 +367,7 @@ exports[`renders components/statistic/demo/component-token.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -412,7 +412,7 @@ exports[`renders components/statistic/demo/component-token.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -445,11 +445,11 @@ exports[`renders components/statistic/demo/component-token.tsx correctly 1`] = `
 exports[`renders components/statistic/demo/countdown.tsx correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left:-8px;margin-right:-8px"
+  style="margin-inline:-8px"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -476,7 +476,7 @@ exports[`renders components/statistic/demo/countdown.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -503,7 +503,7 @@ exports[`renders components/statistic/demo/countdown.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-24"
-    style="padding-left:8px;padding-right:8px;margin-top:32px"
+    style="padding-inline:8px;margin-top:32px"
   >
     <div
       class="ant-statistic"
@@ -530,7 +530,7 @@ exports[`renders components/statistic/demo/countdown.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -561,11 +561,11 @@ exports[`renders components/statistic/demo/countdown.tsx correctly 1`] = `
 exports[`renders components/statistic/demo/unit.tsx correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left:-8px;margin-right:-8px"
+  style="margin-inline:-8px"
 >
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"
@@ -619,7 +619,7 @@ exports[`renders components/statistic/demo/unit.tsx correctly 1`] = `
   </div>
   <div
     class="ant-col ant-col-12"
-    style="padding-left:8px;padding-right:8px"
+    style="padding-inline:8px"
   >
     <div
       class="ant-statistic"

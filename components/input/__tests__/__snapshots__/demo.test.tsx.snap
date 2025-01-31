@@ -2525,11 +2525,11 @@ exports[`renders components/input/demo/group.tsx correctly 1`] = `
   >
     <div
       class="ant-row"
-      style="margin-left:-4px;margin-right:-4px"
+      style="margin-inline:-4px"
     >
       <div
         class="ant-col ant-col-5"
-        style="padding-left:4px;padding-right:4px"
+        style="padding-inline:4px"
       >
         <input
           class="ant-input ant-input-outlined"
@@ -2539,7 +2539,7 @@ exports[`renders components/input/demo/group.tsx correctly 1`] = `
       </div>
       <div
         class="ant-col ant-col-8"
-        style="padding-left:4px;padding-right:4px"
+        style="padding-inline:4px"
       >
         <input
           class="ant-input ant-input-outlined"

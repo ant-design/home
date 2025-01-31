@@ -854,11 +854,11 @@ Array [
           >
             <div
               class="ant-row"
-              style="margin-left: -8px; margin-right: -8px;"
+              style="margin-inline: -8px;"
             >
               <div
                 class="ant-col ant-col-12"
-                style="padding-left: 8px; padding-right: 8px;"
+                style="padding-inline: 8px;"
               >
                 <div
                   class="ant-form-item"
@@ -902,7 +902,7 @@ Array [
               </div>
               <div
                 class="ant-col ant-col-12"
-                style="padding-left: 8px; padding-right: 8px;"
+                style="padding-inline: 8px;"
               >
                 <div
                   class="ant-form-item"
@@ -966,11 +966,11 @@ Array [
             </div>
             <div
               class="ant-row"
-              style="margin-left: -8px; margin-right: -8px;"
+              style="margin-inline: -8px;"
             >
               <div
                 class="ant-col ant-col-12"
-                style="padding-left: 8px; padding-right: 8px;"
+                style="padding-inline: 8px;"
               >
                 <div
                   class="ant-form-item"
@@ -1151,7 +1151,7 @@ Array [
               </div>
               <div
                 class="ant-col ant-col-12"
-                style="padding-left: 8px; padding-right: 8px;"
+                style="padding-inline: 8px;"
               >
                 <div
                   class="ant-form-item"
@@ -1333,11 +1333,11 @@ Array [
             </div>
             <div
               class="ant-row"
-              style="margin-left: -8px; margin-right: -8px;"
+              style="margin-inline: -8px;"
             >
               <div
                 class="ant-col ant-col-12"
-                style="padding-left: 8px; padding-right: 8px;"
+                style="padding-inline: 8px;"
               >
                 <div
                   class="ant-form-item"
@@ -1518,7 +1518,7 @@ Array [
               </div>
               <div
                 class="ant-col ant-col-12"
-                style="padding-left: 8px; padding-right: 8px;"
+                style="padding-inline: 8px;"
               >
                 <div
                   class="ant-form-item"
@@ -2755,11 +2755,11 @@ Array [
             </div>
             <div
               class="ant-row"
-              style="margin-left: -8px; margin-right: -8px;"
+              style="margin-inline: -8px;"
             >
               <div
                 class="ant-col ant-col-24"
-                style="padding-left: 8px; padding-right: 8px;"
+                style="padding-inline: 8px;"
               >
                 <div
                   class="ant-form-item"

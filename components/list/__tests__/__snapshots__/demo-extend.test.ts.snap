@@ -840,14 +840,14 @@ exports[`renders components/list/demo/grid.tsx extend context correctly 1`] = `
     >
       <div
         class="ant-row"
-        style="margin-left: -8px; margin-right: -8px;"
+        style="margin-inline: -8px;"
       >
         <div
           style="width: 25%; max-width: 25%;"
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"
@@ -882,7 +882,7 @@ exports[`renders components/list/demo/grid.tsx extend context correctly 1`] = `
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"
@@ -917,7 +917,7 @@ exports[`renders components/list/demo/grid.tsx extend context correctly 1`] = `
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"
@@ -952,7 +952,7 @@ exports[`renders components/list/demo/grid.tsx extend context correctly 1`] = `
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"
@@ -1003,14 +1003,14 @@ Array [
       >
         <div
           class="ant-row"
-          style="margin-left: -8px; margin-right: -8px;"
+          style="margin-inline: -8px;"
         >
           <div
             style="width: 25%; max-width: 25%;"
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1045,7 +1045,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1080,7 +1080,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1115,7 +1115,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1150,7 +1150,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1185,7 +1185,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1230,14 +1230,14 @@ Array [
       >
         <div
           class="ant-row"
-          style="margin-left: -8px; margin-right: -8px;"
+          style="margin-inline: -8px;"
         >
           <div
             style="width: 25%; max-width: 25%;"
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1272,7 +1272,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1307,7 +1307,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1342,7 +1342,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1377,7 +1377,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1412,7 +1412,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1457,14 +1457,14 @@ Array [
       >
         <div
           class="ant-row"
-          style="margin-left: -8px; margin-right: -8px;"
+          style="margin-inline: -8px;"
         >
           <div
             style="width: 25%; max-width: 25%;"
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1500,7 +1500,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1536,7 +1536,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1572,7 +1572,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1608,7 +1608,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -1644,7 +1644,7 @@ Array [
           >
             <div
               class="ant-col"
-              style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              style="padding-inline: 8px; flex: 1 1 auto;"
             >
               <div
                 class="ant-list-item"
@@ -2290,14 +2290,14 @@ exports[`renders components/list/demo/responsive.tsx extend context correctly 1`
     >
       <div
         class="ant-row"
-        style="margin-left: -8px; margin-right: -8px;"
+        style="margin-inline: -8px;"
       >
         <div
           style="width: 100%; max-width: 100%;"
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"
@@ -2332,7 +2332,7 @@ exports[`renders components/list/demo/responsive.tsx extend context correctly 1`
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"
@@ -2367,7 +2367,7 @@ exports[`renders components/list/demo/responsive.tsx extend context correctly 1`
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"
@@ -2402,7 +2402,7 @@ exports[`renders components/list/demo/responsive.tsx extend context correctly 1`
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"
@@ -2437,7 +2437,7 @@ exports[`renders components/list/demo/responsive.tsx extend context correctly 1`
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"
@@ -2472,7 +2472,7 @@ exports[`renders components/list/demo/responsive.tsx extend context correctly 1`
         >
           <div
             class="ant-col"
-            style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+            style="padding-inline: 8px; flex: 1 1 auto;"
           >
             <div
               class="ant-list-item"

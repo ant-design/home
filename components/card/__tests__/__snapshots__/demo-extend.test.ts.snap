@@ -526,11 +526,11 @@ exports[`renders components/card/demo/grid-card.tsx extend context correctly 2`]
 exports[`renders components/card/demo/in-column.tsx extend context correctly 1`] = `
 <div
   class="ant-row"
-  style="margin-left: -8px; margin-right: -8px;"
+  style="margin-inline: -8px;"
 >
   <div
     class="ant-col ant-col-8"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-card"
@@ -557,7 +557,7 @@ exports[`renders components/card/demo/in-column.tsx extend context correctly 1`]
   </div>
   <div
     class="ant-col ant-col-8"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-card"
@@ -584,7 +584,7 @@ exports[`renders components/card/demo/in-column.tsx extend context correctly 1`]
   </div>
   <div
     class="ant-col ant-col-8"
-    style="padding-left: 8px; padding-right: 8px;"
+    style="padding-inline: 8px;"
   >
     <div
       class="ant-card"

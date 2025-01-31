@@ -9,11 +9,11 @@ Array [
   >
     <div
       class="ant-row"
-      style="margin-left:-12px;margin-right:-12px"
+      style="margin-inline:-12px"
     >
       <div
         class="ant-col ant-col-8"
-        style="padding-left:12px;padding-right:12px"
+        style="padding-inline:12px"
       >
         <div
           class="ant-form-item"
@@ -57,7 +57,7 @@ Array [
       </div>
       <div
         class="ant-col ant-col-8"
-        style="padding-left:12px;padding-right:12px"
+        style="padding-inline:12px"
       >
         <div
           class="ant-form-item"
@@ -159,7 +159,7 @@ Array [
       </div>
       <div
         class="ant-col ant-col-8"
-        style="padding-left:12px;padding-right:12px"
+        style="padding-inline:12px"
       >
         <div
           class="ant-form-item"
@@ -203,7 +203,7 @@ Array [
       </div>
       <div
         class="ant-col ant-col-8"
-        style="padding-left:12px;padding-right:12px"
+        style="padding-inline:12px"
       >
         <div
           class="ant-form-item"
@@ -247,7 +247,7 @@ Array [
       </div>
       <div
         class="ant-col ant-col-8"
-        style="padding-left:12px;padding-right:12px"
+        style="padding-inline:12px"
       >
         <div
           class="ant-form-item"
@@ -349,7 +349,7 @@ Array [
       </div>
       <div
         class="ant-col ant-col-8"
-        style="padding-left:12px;padding-right:12px"
+        style="padding-inline:12px"
       >
         <div
           class="ant-form-item"
@@ -7184,11 +7184,11 @@ exports[`renders components/form/demo/register.tsx correctly 1`] = `
           >
             <div
               class="ant-row"
-              style="margin-left:-4px;margin-right:-4px"
+              style="margin-inline:-4px"
             >
               <div
                 class="ant-col ant-col-12"
-                style="padding-left:4px;padding-right:4px"
+                style="padding-inline:4px"
               >
                 <input
                   aria-required="true"
@@ -7200,7 +7200,7 @@ exports[`renders components/form/demo/register.tsx correctly 1`] = `
               </div>
               <div
                 class="ant-col ant-col-12"
-                style="padding-left:4px;padding-right:4px"
+                style="padding-inline:4px"
               >
                 <button
                   class="ant-btn ant-btn-default ant-btn-color-default ant-btn-variant-outlined"
