@@ -17,7 +17,7 @@ const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
 };
 
 const App: React.FC = () => (
-  <Form
+  <Form<FieldType>
     name="basic"
     labelCol={{ span: 8 }}
     wrapperCol={{ span: 16 }}
