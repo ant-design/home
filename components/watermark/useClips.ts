@@ -1,7 +1,12 @@
 import type { WatermarkProps } from '.';
 import toList from '../_util/toList';
+import Cache from './cache';
 
 export const FontGap = 3;
+
+// The cache instance is currently used only within this file.
+// If manual cache management is required, consider exporting it.
+export const cache = new Cache<[dataURL: string, finalWidth: number, finalHeight: number]>();
 
 function prepareCanvas(
   width: number,
@@ -41,6 +46,21 @@ export default function useClips() {
     gapX: number,
     gapY: number,
   ): [dataURL: string, finalWidth: number, finalHeight: number] {
+    // If the type is HTMLImageElement, the uniqueness is determined by its src property.
+    const key = Cache.generateKey(
+      content instanceof HTMLImageElement ? content.src : content,
+      rotate,
+      ratio,
+      width,
+      height,
+      font,
+      gapX,
+      gapY,
+    );
+    const cacheResult = cache.get(key);
+    if (cacheResult) {
+      return cacheResult;
+    }
     // ================= Text / Image =================
     const [ctx, canvas, contentWidth, contentHeight] = prepareCanvas(width, height, ratio);
 
@@ -132,7 +152,7 @@ export default function useClips() {
     drawImg(cutWidth + realGapX, -cutHeight / 2 - realGapY / 2);
     drawImg(cutWidth + realGapX, +cutHeight / 2 + realGapY / 2);
 
-    return [fCanvas.toDataURL(), filledWidth / ratio, filledHeight / ratio];
+    return cache.set(key, [fCanvas.toDataURL(), filledWidth / ratio, filledHeight / ratio]);
   }
 
   return getClips;

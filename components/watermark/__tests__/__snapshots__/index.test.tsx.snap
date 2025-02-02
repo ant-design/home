@@ -101,3 +101,42 @@ exports[`Watermark rtl render component should be rendered correctly in RTL dire
   />
 </div>
 `;
+
+exports[`Watermark should set watermark from cache correctly 1`] = `
+<div>
+  <div
+    class=""
+    style="position: relative; overflow: hidden;"
+  >
+    <div
+      style="z-index: 9; position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; background-repeat: repeat; background-position: 0px 0px; background-image: url('1'); background-size: 276px; visibility: visible !important;"
+    />
+  </div>
+</div>
+`;
+
+exports[`Watermark should set watermark from cache correctly 2`] = `
+<div>
+  <div
+    class=""
+    style="position: relative; overflow: hidden;"
+  >
+    <div
+      style="z-index: 9; position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; background-repeat: repeat; background-position: 0px 0px; background-image: url('1'); background-size: 276px; visibility: visible !important;"
+    />
+  </div>
+</div>
+`;
+
+exports[`Watermark should set watermark in cache if not available 1`] = `
+<div>
+  <div
+    class=""
+    style="position: relative; overflow: hidden;"
+  >
+    <div
+      style="z-index: 9; position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; background-repeat: repeat; background-position: 0px 0px; background-image: url('data:image/png;base64,00'); background-size: 264px; visibility: visible !important;"
+    />
+  </div>
+</div>
+`;

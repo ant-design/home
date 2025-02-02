@@ -3,6 +3,7 @@ import { useMutateObserver } from '@rc-component/mutate-observer';
 import classNames from 'classnames';
 import useEvent from 'rc-util/lib/hooks/useEvent';
 
+import toList from '../_util/toList';
 import { useToken } from '../theme/internal';
 import WatermarkContext from './context';
 import type { WatermarkContextProps } from './context';
@@ -10,7 +11,6 @@ import useClips, { FontGap } from './useClips';
 import useRafDebounce from './useRafDebounce';
 import useWatermark from './useWatermark';
 import { getPixelRatio, reRendering } from './utils';
-import toList from '../_util/toList';
 
 export interface WatermarkProps {
   zIndex?: number;
@@ -228,6 +228,7 @@ const Watermark: React.FC<WatermarkProps> = (props) => {
         appendWatermark(watermarkInfo[0], watermarkInfo[1], holder);
       });
     }
+    // The useEffect must listen to watermarkInfo because watermarkInfo is reassigned whenever the DOM changes, ensuring that the DOM cannot be deleted.
   }, [watermarkInfo, targetElements]);
 
   // ============================ Observe =============================
