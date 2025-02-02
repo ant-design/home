@@ -2,6 +2,7 @@ import React from 'react';
 
 import { resetWarned } from '../../_util/warning';
 import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
+import ConfigProvider from '../../config-provider';
 
 describe('Collapse', () => {
   const Collapse = require('..').default;
@@ -273,6 +274,27 @@ describe('Collapse', () => {
       'aria-label',
       'collapsed',
     );
+  });
+
+  it('should has borderless-bg class when has contentBg and borderless', () => {
+    const { container } = render(
+      <ConfigProvider
+        theme={{
+          components: {
+            Collapse: {
+              contentBg: 'red',
+            },
+          },
+        }}
+      >
+        <Collapse bordered={false}>
+          <Collapse.Panel header="This is panel header 1" key="1">
+            content
+          </Collapse.Panel>
+        </Collapse>
+      </ConfigProvider>,
+    );
+    expect(container.querySelector('.ant-collapse-borderless-bg')).toBeTruthy();
   });
 
   it('should support styles and classNames', () => {
