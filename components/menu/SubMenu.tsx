@@ -8,6 +8,7 @@ import { cloneElement } from '../_util/reactNode';
 import type { SubMenuType } from './interface';
 import type { MenuContextProps } from './MenuContext';
 import MenuContext from './MenuContext';
+import { ConfigContext } from '../config-provider';
 
 export interface SubMenuProps extends Omit<SubMenuType, 'ref' | 'key' | 'children' | 'label'> {
   title?: React.ReactNode;
@@ -22,6 +23,7 @@ export interface SubMenuProps extends Omit<SubMenuType, 'ref' | 'key' | 'childre
 const SubMenu: React.FC<SubMenuProps> = (props) => {
   const { popupClassName, icon, title, theme: customTheme } = props;
   const context = React.useContext(MenuContext);
+  const { menu } = React.useContext(ConfigContext);
   const { prefixCls, inlineCollapsed, theme: contextTheme } = context;
 
   const parentPath = useFullPath();
@@ -72,6 +74,7 @@ const SubMenu: React.FC<SubMenuProps> = (props) => {
           popupClassName,
           `${prefixCls}-${customTheme || contextTheme}`,
         )}
+        style={{ ...menu?.style, ...style }}
         popupStyle={{
           zIndex,
           // fix: https://github.com/ant-design/ant-design/issues/47826#issuecomment-2360737237
