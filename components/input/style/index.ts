@@ -804,7 +804,7 @@ const genTextAreaStyle: GenerateStyle<InputToken> = (token) => {
 
       [`&-affix-wrapper${componentCls}-affix-wrapper`]: {
         padding: 0,
-
+        height: token.controlHeight,
         [`> textarea${componentCls}`]: {
           fontSize: 'inherit',
           border: 'none',
