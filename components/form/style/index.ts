@@ -477,8 +477,19 @@ const genInlineStyle: GenerateStyle<FormToken> = (token) => {
 };
 
 const makeVerticalLayoutLabel = (token: FormToken): CSSObject => ({
+  ...(token.verticalLabelMargin
+    ? {
+        [`&:not(.${token.rootPrefixCls}-col):not(.${token.rootPrefixCls}-col-*)`]: {
+          margin: token.verticalLabelMargin,
+        },
+        [`& .${token.rootPrefixCls}-form-item`]: {
+          [`&:not(.${token.rootPrefixCls}-col):not(.${token.rootPrefixCls}-col-*)`]: {
+            margin: token.verticalLabelMargin,
+          },
+        },
+      }
+    : {}),
   padding: token.verticalLabelPadding,
-  margin: token.verticalLabelMargin,
   whiteSpace: 'initial',
   textAlign: 'start',
 
