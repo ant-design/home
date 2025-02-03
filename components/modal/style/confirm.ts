@@ -44,7 +44,8 @@ const genModalConfirmStyle: GenerateStyle<ModalToken> = (token) => {
         flexWrap: 'nowrap',
         alignItems: 'start',
 
-        [`> ${token.iconCls}`]: {
+        [`> ${confirmComponentCls}-icon`]: {
+          display: 'flex',
           flex: 'none',
           fontSize: modalConfirmIconSize,
           marginInlineEnd: token.confirmIconMarginInlineEnd,
@@ -53,7 +54,7 @@ const genModalConfirmStyle: GenerateStyle<ModalToken> = (token) => {
             .div(2)
             .equal(),
         },
-        [`&-has-title > ${token.iconCls}`]: {
+        [`&-has-title > ${confirmComponentCls}-icon`]: {
           marginTop: token
             .calc(token.calc(modalTitleHeight).sub(modalConfirmIconSize).equal())
             .div(2)
@@ -71,7 +72,7 @@ const genModalConfirmStyle: GenerateStyle<ModalToken> = (token) => {
       },
 
       // https://github.com/ant-design/ant-design/issues/48159
-      [`${token.iconCls} + ${confirmComponentCls}-paragraph`]: {
+      [`${confirmComponentCls}-icon + ${confirmComponentCls}-paragraph`]: {
         maxWidth: `calc(100% - ${unit(
           token.calc(token.modalConfirmIconSize).add(token.marginSM).equal(),
         )})`,
@@ -102,20 +103,21 @@ const genModalConfirmStyle: GenerateStyle<ModalToken> = (token) => {
       },
     },
 
-    [`${confirmComponentCls}-error ${confirmComponentCls}-body > ${token.iconCls}`]: {
+    [`${confirmComponentCls}-error ${confirmComponentCls}-body > ${confirmComponentCls}-icon`]: {
       color: token.colorError,
     },
 
-    [`${confirmComponentCls}-warning ${confirmComponentCls}-body > ${token.iconCls},
-        ${confirmComponentCls}-confirm ${confirmComponentCls}-body > ${token.iconCls}`]: {
-      color: token.colorWarning,
-    },
+    [`${confirmComponentCls}-warning ${confirmComponentCls}-body > ${confirmComponentCls}-icon,
+        ${confirmComponentCls}-confirm ${confirmComponentCls}-body > ${confirmComponentCls}-icon`]:
+      {
+        color: token.colorWarning,
+      },
 
-    [`${confirmComponentCls}-info ${confirmComponentCls}-body > ${token.iconCls}`]: {
+    [`${confirmComponentCls}-info ${confirmComponentCls}-body > ${confirmComponentCls}-icon`]: {
       color: token.colorInfo,
     },
 
-    [`${confirmComponentCls}-success ${confirmComponentCls}-body > ${token.iconCls}`]: {
+    [`${confirmComponentCls}-success ${confirmComponentCls}-body > ${confirmComponentCls}-icon`]: {
       color: token.colorSuccess,
     },
   };

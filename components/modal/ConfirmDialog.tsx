@@ -142,7 +142,7 @@ export function ConfirmContent(
           [`${bodyCls}-has-title`]: hasTitle,
         })}
       >
-        {mergedIcon}
+        <div className={`${confirmPrefixCls}-icon`}>{mergedIcon}</div>
         <div className={`${confirmPrefixCls}-paragraph`}>
           {hasTitle && <span className={`${confirmPrefixCls}-title`}>{props.title}</span>}
           <div className={`${confirmPrefixCls}-content`}>{props.content}</div>
