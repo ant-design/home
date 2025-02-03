@@ -1467,30 +1467,82 @@ describe('Form', () => {
     });
   });
 
-  it('_internalItemRender api test', () => {
-    const { container } = render(
-      <Form>
-        <Form.Item
-          name="light"
-          // @ts-ignore
-          _internalItemRender={{
-            mark: 'pro_table_render',
-            render: (_: any, doms: any) => (
-              <div>
-                <div className="bamboo">warning title</div>
-                {doms.input}
-                {doms.errorList}
-                {doms.extra}
-              </div>
-            ),
-          }}
-        >
-          <input defaultValue="should warning" />
-        </Form.Item>
-      </Form>,
-    );
+  describe('_internalItemRender props', () => {
+    it('should work (legacy)', () => {
+      const { container } = render(
+        <Form>
+          <Form.Item
+            name="light"
+            // @ts-ignore
+            _internalItemRender={{
+              mark: 'pro_table_render',
+              render: (_: any, doms: any) => (
+                <div>
+                  <div className="bamboo">warning title</div>
+                  {doms.input}
+                  {doms.errorList}
+                  {doms.extra}
+                </div>
+              ),
+            }}
+          >
+            <input defaultValue="should warning" />
+          </Form.Item>
+        </Form>,
+      );
 
-    expect(container.querySelector('.bamboo')!).toHaveTextContent(/warning title/i);
+      expect(container.querySelector('.bamboo')!).toHaveTextContent(/warning title/i);
+    });
+
+    it('`prepare` should work', () => {
+      const mockPrepare = jest.fn().mockImplementation((_, doms) => {
+        return {
+          ...doms,
+          extra: (
+            <div>
+              <div className="bamboo">hello</div>
+              {doms.extra}
+            </div>
+          ),
+        };
+      });
+
+      const mockRender = jest.fn();
+
+      const { container } = render(
+        <Form>
+          <Form.Item
+            name="light"
+            // @ts-ignore
+            _internalItemRender={{
+              mark: 'pro_table_render',
+              prepare: mockPrepare,
+              render: mockRender,
+            }}
+          >
+            <input defaultValue="should warning" />
+          </Form.Item>
+        </Form>,
+      );
+
+      expect(mockPrepare).toHaveBeenCalled();
+      expect(mockRender).not.toHaveBeenCalled();
+
+      expect(mockPrepare).toHaveBeenCalledWith(
+        expect.objectContaining({
+          errors: expect.any(Array),
+          warnings: expect.any(Array),
+        }),
+        // https://zirkelc.dev/posts/use-expectobjectcontaining-with-null-and-undefined
+        expect.objectContaining({
+          input: expect.anything(),
+          errorList: expect.toBeOneOf([expect.anything(), null]),
+          extra: expect.toBeOneOf([expect.anything(), null]),
+        }),
+      );
+
+      expect(container.querySelector('.bamboo')!).toHaveTextContent(/hello/i);
+    });
   });
 
   it('Form Item element id will auto add form_item prefix if form name is empty and item name is in the black list', async () => {

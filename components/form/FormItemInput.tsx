@@ -11,6 +11,22 @@ import ErrorList from './ErrorList';
 import type { ValidateStatus } from './FormItem';
 import FallbackCmp from './style/fallbackCmp';
 
+/** @internal */
+type InternalItemRender = {
+  mark: string;
+  render: (
+    props: FormItemInputProps & FormItemInputMiscProps,
+    domList: {
+      input: JSX.Element;
+      errorList: JSX.Element | null;
+      extra: JSX.Element | null;
+    },
+  ) => React.ReactNode;
+  prepare: (
+    ...params: Parameters<InternalItemRender['render']>
+  ) => Parameters<InternalItemRender['render']>[1];
+};
+
 interface FormItemInputMiscProps {
   prefixCls: string;
   children: React.ReactNode;
@@ -19,17 +35,7 @@ interface FormItemInputMiscProps {
   marginBottom?: number | null;
   onErrorVisibleChanged?: (visible: boolean) => void;
   /** @internal do not use in any of your production. */
-  _internalItemRender?: {
-    mark: string;
-    render: (
-      props: FormItemInputProps & FormItemInputMiscProps,
-      domList: {
-        input: JSX.Element;
-        errorList: JSX.Element | null;
-        extra: JSX.Element | null;
-      },
-    ) => React.ReactNode;
-  };
+  _internalItemRender?: InternalItemRender;
 }
 
 export interface FormItemInputProps {
@@ -139,30 +145,39 @@ const FormItemInput: React.FC<FormItemInputProps & FormItemInputMiscProps> = (pr
     </div>
   ) : null;
 
-  const additionalDom: React.ReactNode =
-    errorListDom || extraDom ? (
-      <div
-        className={`${baseClassName}-additional`}
-        style={marginBottom ? { minHeight: marginBottom + extraHeight } : {}}
-      >
-        {errorListDom}
-        {extraDom}
-      </div>
-    ) : null;
+  let innerRender: InternalItemRender['render'] = (_, { input, errorList, extra }) => (
+    <>
+      {input}
+      {errorList || extra ? (
+        <div
+          className={`${baseClassName}-additional`}
+          style={marginBottom ? { minHeight: marginBottom + extraHeight } : {}}
+        >
+          {errorList}
+          {extra}
+        </div>
+      ) : null}
+    </>
+  );
 
-  const dom: React.ReactNode =
-    formItemRender && formItemRender.mark === 'pro_table_render' && formItemRender.render ? (
-      formItemRender.render(props, { input: inputDom, errorList: errorListDom, extra: extraDom })
-    ) : (
-      <>
-        {inputDom}
-        {additionalDom}
-      </>
-    );
+  // It is just for `pro-components`
+  if (formItemRender?.mark === 'pro_table_render') {
+    if (typeof formItemRender.prepare === 'function') {
+      const _clonedInnerRender = innerRender;
+      innerRender = (...args) => _clonedInnerRender(args[0], formItemRender.prepare(...args));
+    } else if (typeof formItemRender.render === 'function') {
+      innerRender = formItemRender.render;
+    }
+  }
+
   return (
     <FormContext.Provider value={subFormContext}>
       <Col {...mergedWrapperCol} className={className}>
-        {dom}
+        {innerRender(props, {
+          input: inputDom,
+          errorList: errorListDom,
+          extra: extraDom,
+        })}
       </Col>
       <FallbackCmp prefixCls={prefixCls} />
     </FormContext.Provider>

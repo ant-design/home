@@ -3,6 +3,7 @@ import '@testing-library/jest-dom';
 import { toHaveNoViolations } from 'jest-axe';
 import jsdom from 'jsdom';
 import format, { plugins } from 'pretty-format';
+import { toBeOneOf } from 'jest-extended';
 
 import { defaultConfig } from '../components/theme/internal';
 
@@ -113,3 +114,6 @@ expect.addSnapshotSerializer({
 });
 
 expect.extend(toHaveNoViolations);
+
+// https://jest-extended.jestcommunity.dev/docs/getting-started/setup
+expect.extend({ toBeOneOf });

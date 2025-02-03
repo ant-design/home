@@ -259,6 +259,7 @@
     "jest-canvas-mock": "^2.5.2",
     "jest-environment-jsdom": "^29.7.0",
     "jest-environment-node": "^29.7.0",
+    "jest-extended": "^4.0.2",
     "jest-image-snapshot": "^6.4.0",
     "jest-puppeteer": "^11.0.0",
     "jquery": "^3.7.1",
