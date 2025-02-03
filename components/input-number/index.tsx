@@ -52,7 +52,7 @@ const InputNumber = React.forwardRef<HTMLInputElement, InputNumberProps>((props,
     );
   }
 
-  const { getPrefixCls, direction } = React.useContext(ConfigContext);
+  const { getPrefixCls, direction, inputNumber } = React.useContext(ConfigContext);
 
   const inputRef = React.useRef<HTMLInputElement>(null);
 
@@ -135,7 +135,14 @@ const InputNumber = React.forwardRef<HTMLInputElement, InputNumberProps>((props,
     <RcInputNumber
       ref={inputRef}
       disabled={mergedDisabled}
-      className={classNames(cssVarCls, rootCls, className, rootClassName, compactItemClassnames)}
+      className={classNames(
+        cssVarCls,
+        rootCls,
+        className,
+        rootClassName,
+        compactItemClassnames,
+        inputNumber?.className,
+      )}
       upHandler={upIcon}
       downHandler={downIcon}
       prefixCls={prefixCls}
