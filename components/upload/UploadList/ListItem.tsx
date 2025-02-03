@@ -166,6 +166,8 @@ const ListItem = React.forwardRef<HTMLDivElement, ListItemProps>(
             () => onDownload(file),
             prefixCls,
             locale.downloadFile,
+            // acceptUploadDisabled is true, hope download icon will follow Upload disabled prop
+            true,
           )
         : null;
     const downloadOrDelete = listType !== 'picture-card' && listType !== 'picture-circle' && (

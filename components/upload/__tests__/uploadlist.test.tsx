@@ -640,7 +640,7 @@ describe('Upload List', () => {
 
     expect(
       wrapper.querySelectorAll('.ant-upload-list-item-actions > *')[1].hasAttribute('disabled'),
-    ).toBeFalsy();
+    ).toBeTruthy();
     // delete icon
     expect(
       wrapper.querySelectorAll('.ant-upload-list-item-actions > *')[2].hasAttribute('disabled'),
