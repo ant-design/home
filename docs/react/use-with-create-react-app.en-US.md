@@ -5,7 +5,7 @@ order: 1
 title: Usage with create-react-app
 ---
 
-[create-react-app](https://create-react-app.dev/) is one of the best React application development tools, This article will try to use `create-react-app` to create a `TypeScript` project, and introduce antd.
+[create-react-app](https://create-react-app.dev) was once one of the best React application development tools, This article will try to use `create-react-app` to create a `TypeScript` project, and introduce antd. (Note: React has officially deprecated `create-react-app` and is no longer recommended)
 
 > We build `antd` based on latest stable version of TypeScript (`>=5.0.0`), please make sure your project dependency matches it.
 
