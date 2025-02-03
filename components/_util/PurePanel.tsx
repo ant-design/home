@@ -5,11 +5,24 @@ import ConfigProvider, { ConfigContext } from '../config-provider';
 import type { AnyObject } from './type';
 
 export function withPureRenderTheme<T extends AnyObject = AnyObject>(Component: React.FC<T>) {
-  return (props: T) => (
-    <ConfigProvider theme={{ token: { motion: false, zIndexPopupBase: 0 } }}>
-      <Component {...props} />
-    </ConfigProvider>
-  );
+  return (props: T) => {
+    const { theme } = React.useContext(ConfigContext);
+
+    return (
+      <ConfigProvider
+        theme={{
+          ...theme,
+          token: {
+            ...(theme ? theme.token : {}),
+            motion: false,
+            zIndexPopupBase: 0,
+          },
+        }}
+      >
+        <Component {...props} />
+      </ConfigProvider>
+    );
+  };
 }
 
 export interface BaseProps {
