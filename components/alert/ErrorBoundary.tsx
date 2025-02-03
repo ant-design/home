@@ -34,6 +34,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
     const componentStack = info?.componentStack || null;
     const errorMessage = typeof message === 'undefined' ? (error || '').toString() : message;
     const errorDescription = typeof description === 'undefined' ? componentStack : description;
+
     if (error) {
       return (
         <Alert
@@ -46,6 +47,11 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
         />
       );
     }
+
+    if (typeof children === 'bigint') {
+      return children.toString();
+    }
+
     return children;
   }
 }

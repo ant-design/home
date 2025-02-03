@@ -200,4 +200,14 @@ describe('Alert', () => {
     expect(alertRef.current?.nativeElement).toBeTruthy();
     expect(alertRef.current?.nativeElement).toBe(element);
   });
+
+  it('should accept bigint as children in ErrorBoundary', () => {
+    const { container } = render(
+      <div id="bigint-id">
+        <ErrorBoundary>{BigInt(12345678901234567890n)}</ErrorBoundary>
+      </div>,
+    );
+    const element = container.querySelector<HTMLDivElement>('#bigint-id');
+    expect(element?.textContent).toBe('12345678901234567890');
+  });
 });
