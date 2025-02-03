@@ -108,6 +108,7 @@ const genTimelineStyle: GenerateStyle<TimelineToken, CSSObject> = (token) => {
           position: 'absolute',
           insetBlockStart: calc(token.itemHeadSize).div(2).equal(),
           insetInlineStart: calc(token.itemHeadSize).div(2).equal(),
+          backgroundColor: 'unset',
           width: 'auto',
           height: 'auto',
           marginBlockStart: 0,
