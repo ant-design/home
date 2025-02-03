@@ -111,10 +111,11 @@ const GlobalHolderWrapper = React.forwardRef<GlobalHolderRef, unknown>((_, ref) 
   const rootPrefixCls = global.getRootPrefixCls();
   const rootIconPrefixCls = global.getIconPrefixCls();
   const theme = global.getTheme();
+  const csp = global.getCsp();
 
   const dom = <GlobalHolder ref={ref} sync={sync} messageConfig={messageConfig} />;
   return (
-    <ConfigProvider prefixCls={rootPrefixCls} iconPrefixCls={rootIconPrefixCls} theme={theme}>
+    <ConfigProvider prefixCls={rootPrefixCls} iconPrefixCls={rootIconPrefixCls} theme={theme} csp={csp}>
       {global.holderRender ? global.holderRender(dom) : dom}
     </ConfigProvider>
   );
