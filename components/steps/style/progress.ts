@@ -65,7 +65,7 @@ const genStepsProgressStyle: GenerateStyle<StepsToken, CSSObject> = (token) => {
           position: 'absolute',
           insetInlineStart: '50%',
           top: '50%',
-          transform: 'translate(-50%, -50%)',
+          transform: 'translate(50%, -50%)',
 
           '&-inner': {
             width: `${unit(progressSize)} !important`,
