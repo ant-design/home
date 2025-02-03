@@ -86,6 +86,7 @@ demo:
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | crossOrigin | CORS 属性设置 | `'anonymous'` \| `'use-credentials'` \| `''` | - | 4.20.0 |
+| metadata | 自定义用户元数据 |  any | - | 5.20.3 |
 | name | 文件名 | string | - | - |
 | percent | 上传进度 | number | - | - |
 | status | 上传状态，不同状态展示颜色也会有所不同 | `error` \| `done` \| `uploading` \| `removed` | - | - |

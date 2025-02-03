@@ -36,6 +36,7 @@ export interface UploadFile<T = any> extends ProgressAriaProps {
   type?: string;
   xhr?: T;
   preview?: string;
+  metadata?: any;
 }
 
 export interface InternalUploadFile<T = any> extends UploadFile<T> {
