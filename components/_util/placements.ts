@@ -174,6 +174,9 @@ export default function getPlacements(config: PlacementsConfig) {
       case 'topLeft':
       case 'topRight':
         placementInfo.offset[1] = -halfArrowWidth - offset;
+        if (autoAdjustOverflow) {
+          placementInfo.dynamicInset = false;
+        }
         break;
 
       case 'bottom':
@@ -227,6 +230,13 @@ export default function getPlacements(config: PlacementsConfig) {
 
     // Overflow
     placementInfo.overflow = getOverflowOptions(key, arrowOffset, arrowWidth, autoAdjustOverflow);
+
+    if (autoAdjustOverflow && key === 'topRight') {
+      placementInfo.overflow = {
+        shiftX: true,
+        adjustY: true,
+      };
+    }
 
     // VisibleFirst
     if (visibleFirst) {
