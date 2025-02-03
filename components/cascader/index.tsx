@@ -329,7 +329,10 @@ const Cascader = React.forwardRef<CascaderRef, CascaderProps<any>>((props, ref) 
       disabled={mergedDisabled}
       style={{ ...cascader?.style, ...style }}
       {...(restProps as any)}
-      builtinPlacements={mergedBuiltinPlacements(builtinPlacements, popupOverflow)}
+      builtinPlacements={mergedBuiltinPlacements({
+        buildInPlacements: builtinPlacements,
+        popupOverflow,
+      })}
       direction={mergedDirection}
       placement={memoPlacement}
       notFoundContent={mergedNotFoundContent}

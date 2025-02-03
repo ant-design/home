@@ -81,6 +81,7 @@ return (
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | allowClear | 自定义清除按钮 | boolean \| { clearIcon?: ReactNode } | false | 5.8.0: 支持对象类型 |
+| autoAdjustOverflow | 下拉框被遮挡时自动调整位置 | boolean | true | 5.24.0 |
 | autoClearSearchValue | 是否在选中项后清空搜索框，只在 `mode` 为 `multiple` 或 `tags` 时有效 | boolean | true |  |
 | autoFocus | 默认获取焦点 | boolean | false |  |
 | defaultActiveFirstOption | 是否默认高亮第一个选项 | boolean | true |  |

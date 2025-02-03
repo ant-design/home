@@ -296,7 +296,10 @@ const InternalTreeSelect = <ValueType = any, OptionType extends DataNode = DataN
       disabled={mergedDisabled}
       {...selectProps}
       dropdownMatchSelectWidth={mergedPopupMatchSelectWidth}
-      builtinPlacements={mergedBuiltinPlacements(builtinPlacements, popupOverflow)}
+      builtinPlacements={mergedBuiltinPlacements({
+        buildInPlacements: builtinPlacements,
+        popupOverflow,
+      })}
       ref={ref}
       prefixCls={prefixCls}
       className={mergedClassName}

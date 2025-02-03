@@ -5,6 +5,7 @@ import toArray from 'rc-util/lib/Children/toArray';
 import omit from 'rc-util/lib/omit';
 
 import { useZIndex } from '../_util/hooks/useZIndex';
+import type { AdjustOverflow } from '../_util/placements';
 import genPurePanel from '../_util/PurePanel';
 import type { InputStatus } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
@@ -43,6 +44,7 @@ export interface AutoCompleteProps<
   /** @deprecated Please use `popupMatchSelectWidth` instead */
   dropdownMatchSelectWidth?: boolean | number;
   popupMatchSelectWidth?: boolean | number;
+  autoAdjustOverflow?: boolean | AdjustOverflow;
 }
 
 function isSelectOptionOrSelectOptGroup(child: any): boolean {
@@ -60,6 +62,7 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
     dropdownClassName,
     children,
     dataSource,
+    autoAdjustOverflow = true,
   } = props;
   const childNodes: React.ReactElement[] = toArray(children);
 
@@ -144,6 +147,7 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
       }}
       className={classNames(`${prefixCls}-auto-complete`, className)}
       mode={Select.SECRET_COMBOBOX_MODE_DO_NOT_USE as SelectProps['mode']}
+      autoAdjustOverflow={autoAdjustOverflow}
       {...{
         // Internal api
         getInputElement,

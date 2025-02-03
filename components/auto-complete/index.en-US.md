@@ -43,6 +43,7 @@ Common props ref：[Common props](/docs/react/common-props)
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
 | allowClear | Show clear button | boolean \| { clearIcon?: ReactNode } | false | 5.8.0: Support Object type |
+| autoAdjustOverflow | Whether to adjust dropdown placement automatically when dropdown is off screen | boolean | true | 5.24.0 |
 | autoFocus | If get focus when component mounted | boolean | false |  |
 | backfill | If backfill selected item the input when using keyboard | boolean | false |  |
 | children (for customize input element) | Customize input element | HTMLInputElement \| HTMLTextAreaElement \| React.ReactElement&lt;InputProps> | &lt;Input /> |  |

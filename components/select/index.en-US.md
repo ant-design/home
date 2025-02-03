@@ -80,6 +80,7 @@ Common props ref：[Common props](/docs/react/common-props)
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
 | allowClear | Customize clear icon | boolean \| { clearIcon?: ReactNode } | false | 5.8.0: Support object type |
+| autoAdjustOverflow | Whether to adjust dropdown placement automatically when dropdown is off screen | boolean | true | 5.24.0 |
 | autoClearSearchValue | Whether the current search will be cleared on selecting an item. Only applies when `mode` is set to `multiple` or `tags` | boolean | true |  |
 | autoFocus | Get focus by default | boolean | false |  |
 | defaultActiveFirstOption | Whether active first option by default | boolean | true |  |

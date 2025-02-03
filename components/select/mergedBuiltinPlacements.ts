@@ -1,16 +1,40 @@
 import type { AlignType, BuildInPlacements } from '@rc-component/trigger';
 
 import type { PopupOverflow } from '../config-provider/context';
+import type { AdjustOverflow } from '../_util/placements';
 
-const getBuiltInPlacements = (popupOverflow?: PopupOverflow): Record<string, AlignType> => {
+interface MergedPlacementsConfig {
+  buildInPlacements?: BuildInPlacements;
+  popupOverflow?: PopupOverflow;
+  autoAdjustOverflow?: boolean | AdjustOverflow;
+}
+
+const getOverflow = (autoAdjustOverflow?: boolean | AdjustOverflow): AlignType['overflow'] => {
+  if (autoAdjustOverflow === false) {
+    return {
+      adjustX: false,
+      adjustY: false,
+    };
+  }
+  const overflow =
+    autoAdjustOverflow && typeof autoAdjustOverflow === 'object' ? autoAdjustOverflow : {};
+
+  return {
+    adjustX: true,
+    adjustY: true,
+    shiftY: true,
+    ...overflow,
+  };
+};
+
+const getBuiltInPlacements = (
+  popupOverflow?: PopupOverflow,
+  autoAdjustOverflow?: boolean | AdjustOverflow,
+): Record<string, AlignType> => {
   const htmlRegion: AlignType['htmlRegion'] = popupOverflow === 'scroll' ? 'scroll' : 'visible';
 
   const sharedConfig: AlignType = {
-    overflow: {
-      adjustX: true,
-      adjustY: true,
-      shiftY: true,
-    },
+    overflow: getOverflow(autoAdjustOverflow),
     htmlRegion,
     dynamicInset: true,
   };
@@ -39,11 +63,10 @@ const getBuiltInPlacements = (popupOverflow?: PopupOverflow): Record<string, Ali
   };
 };
 
-function mergedBuiltinPlacements(
-  buildInPlacements?: BuildInPlacements,
-  popupOverflow?: PopupOverflow,
-) {
-  return buildInPlacements || getBuiltInPlacements(popupOverflow);
+function mergedBuiltinPlacements(config: MergedPlacementsConfig) {
+  const { buildInPlacements, popupOverflow, autoAdjustOverflow } = config;
+
+  return buildInPlacements || getBuiltInPlacements(popupOverflow, autoAdjustOverflow);
 }
 
 export default mergedBuiltinPlacements;

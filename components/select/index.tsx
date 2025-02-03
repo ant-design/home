@@ -10,6 +10,7 @@ import omit from 'rc-util/lib/omit';
 import { useZIndex } from '../_util/hooks/useZIndex';
 import type { SelectCommonPlacement } from '../_util/motion';
 import { getTransitionName } from '../_util/motion';
+import type { AdjustOverflow } from '../_util/placements';
 import genPurePanel from '../_util/PurePanel';
 import type { InputStatus } from '../_util/statusUtils';
 import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
@@ -82,6 +83,7 @@ export interface SelectProps<
   /** @deprecated Please use `popupMatchSelectWidth` instead */
   dropdownMatchSelectWidth?: boolean | number;
   popupMatchSelectWidth?: boolean | number;
+  autoAdjustOverflow?: boolean | AdjustOverflow;
 }
 
 const SECRET_COMBOBOX_MODE_DO_NOT_USE = 'SECRET_COMBOBOX_MODE_DO_NOT_USE';
@@ -120,6 +122,7 @@ const InternalSelect = <
     tagRender,
     maxCount,
     prefix,
+    autoAdjustOverflow = true,
     ...rest
   } = props;
 
@@ -287,7 +290,11 @@ const InternalSelect = <
       style={{ ...select?.style, ...style }}
       dropdownMatchSelectWidth={mergedPopupMatchSelectWidth}
       transitionName={getTransitionName(rootPrefixCls, 'slide-up', transitionName)}
-      builtinPlacements={mergedBuiltinPlacements(builtinPlacements, popupOverflow)}
+      builtinPlacements={mergedBuiltinPlacements({
+        buildInPlacements: builtinPlacements,
+        popupOverflow,
+        autoAdjustOverflow,
+      })}
       listHeight={listHeight}
       listItemHeight={listItemHeight}
       mode={mode}

@@ -44,6 +44,7 @@ demo:
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | allowClear | 支持清除 | boolean \| { clearIcon?: ReactNode } | false | 5.8.0: 支持对象形式 |
+| autoAdjustOverflow | 下拉框被遮挡时自动调整位置 | boolean | true | 5.24.0 |
 | autoFocus | 自动获取焦点 | boolean | false |  |
 | backfill | 使用键盘选择选项的时候把选中项回填到输入框中 | boolean | false |  |
 | children (自动完成的数据源) | 自动完成的数据源，不能和自定义输入框同时配置 | React.ReactElement&lt;OptionProps> \| Array&lt;React.ReactElement&lt;OptionProps>> | - |  |
