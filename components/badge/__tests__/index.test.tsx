@@ -208,7 +208,7 @@ describe('Badge', () => {
 
     expect(container.querySelectorAll('.ant-badge-count')).toHaveLength(1);
     expect(container.querySelectorAll('[title="44"]')).toHaveLength(1);
-    expect(container.querySelectorAll('.ant-badge-status-dot')).toHaveLength(2);
+    expect(container.querySelectorAll('.ant-badge-status-dot')).toHaveLength(1);
   });
 
   it('Badge not render status-text when text is empty string', () => {
@@ -261,5 +261,15 @@ describe('Badge', () => {
     // styles
     expect(element).toHaveStyle({ backgroundColor: 'yellow' });
     expect(element?.querySelector<HTMLElement>('sup')).toHaveStyle({ backgroundColor: 'blue' });
+  });
+
+  // https://github.com/ant-design/ant-design/issues/49149
+  it('should display custom color and number is 0 when showZero is false', () => {
+    const { container, rerender } = render(<Badge count={0} color="#ff0" />);
+
+    expect(container.querySelectorAll('.ant-badge-status-dot')).toHaveLength(0);
+
+    rerender(<Badge count={0} color="#ff0" showZero />);
+    expect(container.querySelectorAll('[title="0"]')).toHaveLength(1);
   });
 });

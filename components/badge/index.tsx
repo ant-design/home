@@ -148,7 +148,7 @@ const InternalBadge = React.forwardRef<HTMLSpanElement, BadgeProps>((props, ref)
 
   // Shared styles
   const statusCls = classnames(classNames?.indicator, badge?.classNames?.indicator, {
-    [`${prefixCls}-status-dot`]: hasStatus,
+    [`${prefixCls}-status-dot`]: isZero ? showZero : hasStatus,
     [`${prefixCls}-status-${status}`]: !!status,
     [`${prefixCls}-color-${color}`]: isInternalColor,
   });
