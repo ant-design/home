@@ -88,6 +88,7 @@ export interface TableProps<RecordType = AnyObject>
   dropdownPrefixCls?: string;
   dataSource?: RcTableProps<RecordType>['data'];
   columns?: ColumnsType<RecordType>;
+  noDynamicTableData?: boolean;
   pagination?: false | TablePaginationConfig;
   loading?: boolean | SpinProps;
   size?: SizeType;
@@ -130,6 +131,7 @@ const InternalTable = <RecordType extends AnyObject = AnyObject>(
     bordered,
     dropdownPrefixCls: customizeDropdownPrefixCls,
     dataSource,
+    noDynamicTableData,
     pagination,
     rowSelection,
     rowKey = 'key',
@@ -392,6 +394,10 @@ const InternalTable = <RecordType extends AnyObject = AnyObject>(
 
     const { current = 1, total, pageSize = DEFAULT_PAGE_SIZE } = mergedPagination;
     warning(current > 0, 'usage', '`current` should be positive number.');
+
+    if (noDynamicTableData) {
+      return mergedData;
+    }
 
     // Dynamic table data
     if (mergedData.length < total!) {
