@@ -6,6 +6,7 @@ import type { CSSMotionProps } from 'rc-motion';
 import type { BasicDataNode, TreeProps as RcTreeProps } from 'rc-tree';
 import RcTree from 'rc-tree';
 import type { DataNode, Key } from 'rc-tree/lib/interface';
+import DisabledContext from '../config-provider/DisabledContext';
 
 import initCollapseMotion from '../_util/motion';
 import { ConfigContext } from '../config-provider';
@@ -173,10 +174,15 @@ const Tree = React.forwardRef<RcTree, TreeProps>((props, ref) => {
     draggable,
     motion: customMotion,
     style,
+    disabled: customDisabled,
   } = props;
 
   const prefixCls = getPrefixCls('tree', customizePrefixCls);
   const rootPrefixCls = getPrefixCls();
+
+  // ===================== Disabled =====================
+  const disabled = React.useContext(DisabledContext);
+  const mergedDisabled = customDisabled ?? disabled;
 
   const motion: CSSMotionProps = customMotion ?? {
     ...initCollapseMotion(rootPrefixCls),
@@ -192,6 +198,7 @@ const Tree = React.forwardRef<RcTree, TreeProps>((props, ref) => {
     blockNode,
     showLine: Boolean(showLine),
     dropIndicatorRender,
+    disabled: mergedDisabled,
   };
 
   const [wrapCSSVar, hashId, cssVarCls] = useStyle(prefixCls);
