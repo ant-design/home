@@ -262,4 +262,20 @@ describe('Badge', () => {
     expect(element).toHaveStyle({ backgroundColor: 'yellow' });
     expect(element?.querySelector<HTMLElement>('sup')).toHaveStyle({ backgroundColor: 'blue' });
   });
+
+  it('should display custom status title when statusTitle is set', () => {
+    const { container } = render(<Badge status="success" statusTitle="Custom Status Title" />);
+    const badgeStatusElement = container.querySelector('.ant-badge-status-text');
+
+    expect(badgeStatusElement).toBeTruthy();
+    expect(badgeStatusElement?.getAttribute('title')).toBe('Custom Status Title');
+  });
+
+  it('should fallback to default title when statusTitle is not set', () => {
+    const { container } = render(<Badge status="success" />);
+    const badgeStatusElement = container.querySelector('.ant-badge-status-text');
+
+    expect(badgeStatusElement).toBeTruthy();
+    expect(badgeStatusElement?.getAttribute('title')).toBe(null); // 默认无title，若有则根据情况修改
+  });
 });

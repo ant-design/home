@@ -51,6 +51,7 @@ group: 数据展示
 | showZero | 当数值为 0 时，是否展示 Badge | boolean | false |  |
 | size | 在设置了 `count` 的前提下有效，设置小圆点的大小 | `default` \| `small` | - | - |
 | status | 设置 Badge 为状态点 | `success` \| `processing` \| `default` \| `error` \| `warning` | - |  |
+| statusTitle | 设置鼠标放在status状态点的文本，在设置了 `status`的前提下有效。 | string | - |  |
 | styles | 语义化结构 style | [Record<SemanticDOM, CSSProperties>](#semantic-dom) | - | 5.7.0 |
 | text | 在设置了 `status` 的前提下有效，设置状态点的文本 | ReactNode | - |  |
 | title | 设置鼠标放在状态点上时显示的文字 | string | - |  |
