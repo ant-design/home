@@ -466,8 +466,8 @@ exports[`renders components/statistic/demo/countdown.tsx extend context correctl
     </div>
   </div>
   <div
-    class="ant-col ant-col-24"
-    style="padding-left: 8px; padding-right: 8px; margin-top: 32px;"
+    class="ant-col ant-col-12"
+    style="padding-left: 8px; padding-right: 8px;"
   >
     <div
       class="ant-statistic"
@@ -487,6 +487,37 @@ exports[`renders components/statistic/demo/countdown.tsx extend context correctl
         </span>
       </div>
     </div>
+  </div>
+  <div
+    class="ant-col ant-col-12"
+    style="padding-left: 8px; padding-right: 8px;"
+  >
+    <div
+      class="ant-statistic"
+    >
+      <div
+        class="ant-statistic-title"
+      >
+        Countdown with Start / Pause
+      </div>
+      <div
+        class="ant-statistic-content"
+      >
+        <span
+          class="ant-statistic-content-value"
+        >
+          48:00:30
+        </span>
+      </div>
+    </div>
+    <button
+      class="ant-btn ant-btn-primary ant-btn-color-primary ant-btn-variant-solid"
+      type="button"
+    >
+      <span>
+        Pause
+      </span>
+    </button>
   </div>
   <div
     class="ant-col ant-col-12"

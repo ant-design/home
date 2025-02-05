@@ -59,9 +59,13 @@ export function formatTimeStr(duration: number, format: string) {
   });
 }
 
-export function formatCountdown(value: valueType, config: CountdownFormatConfig) {
+export function formatCountdown(
+  value: valueType,
+  config: CountdownFormatConfig,
+  pauseDuration: number,
+) {
   const { format = '' } = config;
-  const target = new Date(value).getTime();
+  const target = new Date(value).getTime() + pauseDuration;
   const current = Date.now();
   const diff = Math.max(target - current, 0);
 

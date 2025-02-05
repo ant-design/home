@@ -53,6 +53,7 @@ Common props ref：[Common props](/docs/react/common-props)
 | title | Display title | ReactNode | - |  |
 | value | Set target countdown time | number | - |  |
 | valueStyle | Set value section style | CSSProperties | - |  |
+| isPaused | Set whether to pause the countdown | boolean | false |  |
 | onFinish | Trigger when time's up | () => void | - |  |
 | onChange | Trigger when time's changing | (value: number) => void | - | 4.16.0 |
 

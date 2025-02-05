@@ -54,6 +54,7 @@ demo:
 | title | 数值的标题 | ReactNode | - |  |
 | value | 数值内容 | number | - |  |
 | valueStyle | 设置数值区域的样式 | CSSProperties | - |  |
+| isPaused | 设置倒计时是否暂停 | boolean | false |  |
 | onFinish | 倒计时完成时触发 | () => void | - |  |
 | onChange | 倒计时时间变化时触发 | (value: number) => void | - | 4.16.0 |
 

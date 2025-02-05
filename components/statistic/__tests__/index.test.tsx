@@ -140,6 +140,30 @@ describe('Statistic', () => {
       jest.useRealTimers();
     });
 
+    it('should pause and start the countdown', async () => {
+      jest.useFakeTimers();
+      const onChange = jest.fn();
+      const { rerender } = render(
+        <Statistic.Countdown value={Date.now() + 1000} onChange={onChange} isPaused />,
+      );
+
+      // Wait for some time and check if onChange has been called
+      await waitFakeTimer(500);
+      expect(onChange).not.toHaveBeenCalled();
+
+      // Now update the component to remove the pause
+      rerender(
+        <Statistic.Countdown value={Date.now() + 1000} onChange={onChange} isPaused={false} />,
+      );
+
+      // Wait for some time and check if onChange has been called
+      await waitFakeTimer(500);
+      expect(onChange).toHaveBeenCalled();
+
+      jest.clearAllTimers();
+      jest.useRealTimers();
+    });
+
     it('responses hover events', () => {
       const onMouseEnter = jest.fn();
       const onMouseLeave = jest.fn();
