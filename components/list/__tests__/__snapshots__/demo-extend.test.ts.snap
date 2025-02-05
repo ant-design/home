@@ -1771,7 +1771,7 @@ exports[`renders components/list/demo/infinite-load.tsx extend context correctly
           />
         </div>
         <div
-          class="ant-skeleton-content"
+          class="ant-skeleton-section"
         >
           <h3
             class="ant-skeleton-title"

@@ -18,6 +18,8 @@ import Title from './Title';
 /* This only for skeleton internal. */
 type SkeletonAvatarProps = Omit<AvatarProps, 'active'>;
 
+export type SemanticName = 'root' | 'header' | 'section' | 'avatar' | 'title' | 'paragraph';
+
 export interface SkeletonProps {
   active?: boolean;
   loading?: boolean;
@@ -30,6 +32,8 @@ export interface SkeletonProps {
   title?: SkeletonTitleProps | boolean;
   paragraph?: SkeletonParagraphProps | boolean;
   round?: boolean;
+  classNames?: Record<SemanticName, string>;
+  styles?: Record<SemanticName, React.CSSProperties>;
 }
 
 function getComponentProps<T>(prop?: T | boolean): T | Record<string, string> {
@@ -86,13 +90,17 @@ type CompoundedComponent = {
   Node: typeof SkeletonNode;
 };
 
+// Tips: ctx.classNames.root < ctx.className < cpns.classNames.root < cpns.className < rootClassName
+
 const Skeleton: React.FC<SkeletonProps> & CompoundedComponent = (props) => {
   const {
     prefixCls: customizePrefixCls,
     loading,
     className,
     rootClassName,
+    classNames: skeletonClassNames,
     style,
+    styles,
     children,
     avatar = false,
     title = true,
@@ -106,6 +114,8 @@ const Skeleton: React.FC<SkeletonProps> & CompoundedComponent = (props) => {
     direction,
     className: contextClassName,
     style: contextStyle,
+    classNames: contextClassNames,
+    styles: contextStyles,
   } = useComponentConfig('skeleton');
   const prefixCls = getPrefixCls('skeleton', customizePrefixCls);
   const [wrapCSSVar, hashId, cssVarCls] = useStyle(prefixCls);
@@ -119,13 +129,22 @@ const Skeleton: React.FC<SkeletonProps> & CompoundedComponent = (props) => {
     let avatarNode: React.ReactNode;
     if (hasAvatar) {
       const avatarProps: SkeletonAvatarProps = {
+        className: classNames(contextClassNames.avatar, skeletonClassNames?.avatar),
         prefixCls: `${prefixCls}-avatar`,
         ...getAvatarBasicProps(hasTitle, hasParagraph),
         ...getComponentProps(avatar),
+        style: { ...contextStyles?.avatar, ...styles?.avatar },
       };
       // We direct use SkeletonElement as avatar in skeleton internal.
       avatarNode = (
-        <div className={`${prefixCls}-header`}>
+        <div
+          className={classNames(
+            contextClassNames?.header,
+            skeletonClassNames?.header,
+            `${prefixCls}-header`,
+          )}
+          style={{ ...contextStyles?.header, ...styles?.header }}
+        >
           <Element {...avatarProps} />
         </div>
       );
@@ -137,9 +156,11 @@ const Skeleton: React.FC<SkeletonProps> & CompoundedComponent = (props) => {
       let $title: React.ReactNode;
       if (hasTitle) {
         const titleProps: SkeletonTitleProps = {
+          className: classNames(contextClassNames?.title, skeletonClassNames?.title),
           prefixCls: `${prefixCls}-title`,
           ...getTitleBasicProps(hasAvatar, hasParagraph),
           ...getComponentProps(title),
+          style: { ...contextStyles?.title, ...styles?.title },
         };
 
         $title = <Title {...titleProps} />;
@@ -149,16 +170,25 @@ const Skeleton: React.FC<SkeletonProps> & CompoundedComponent = (props) => {
       let paragraphNode: React.ReactNode;
       if (hasParagraph) {
         const paragraphProps: SkeletonParagraphProps = {
+          className: classNames(contextClassNames?.paragraph, skeletonClassNames?.paragraph),
           prefixCls: `${prefixCls}-paragraph`,
           ...getParagraphBasicProps(hasAvatar, hasTitle),
           ...getComponentProps(paragraph),
+          style: { ...contextStyles?.paragraph, ...styles?.paragraph },
         };
 
         paragraphNode = <Paragraph {...paragraphProps} />;
       }
 
       contentNode = (
-        <div className={`${prefixCls}-content`}>
+        <div
+          className={classNames(
+            contextClassNames?.section,
+            skeletonClassNames?.section,
+            `${prefixCls}-section`,
+          )}
+          style={{ ...contextStyles?.section, ...styles?.section }}
+        >
           {$title}
           {paragraphNode}
         </div>
@@ -173,6 +203,8 @@ const Skeleton: React.FC<SkeletonProps> & CompoundedComponent = (props) => {
         [`${prefixCls}-rtl`]: direction === 'rtl',
         [`${prefixCls}-round`]: round,
       },
+      contextClassNames?.root,
+      skeletonClassNames?.root,
       contextClassName,
       className,
       rootClassName,
@@ -181,7 +213,10 @@ const Skeleton: React.FC<SkeletonProps> & CompoundedComponent = (props) => {
     );
 
     return wrapCSSVar(
-      <div className={cls} style={{ ...contextStyle, ...style }}>
+      <div
+        className={cls}
+        style={{ ...contextStyles?.root, ...contextStyle, ...styles?.root, ...style }}
+      >
         {avatarNode}
         {contentNode}
       </div>,

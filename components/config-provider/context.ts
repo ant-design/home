@@ -31,6 +31,7 @@ import type { PopoverProps } from '../popover';
 import type { ResultProps } from '../result';
 import type { SegmentedProps } from '../segmented';
 import type { SelectProps } from '../select';
+import type { SkeletonProps } from '../skeleton';
 import type { SliderProps } from '../slider';
 import type { SpaceProps } from '../space';
 import type { SpinProps } from '../spin';
@@ -213,6 +214,8 @@ export type PopconfirmConfig = Pick<
 
 export type SliderConfig = ComponentStyleConfig & Pick<SliderProps, 'styles' | 'classNames'>;
 
+export type SkeletonConfig = ComponentStyleConfig & Pick<SkeletonProps, 'styles' | 'classNames'>;
+
 export type SegmentedConfig = ComponentStyleConfig & Pick<SegmentedProps, 'classNames' | 'styles'>;
 
 export type SpinConfig = ComponentStyleConfig & Pick<SpinProps, 'indicator'>;
@@ -282,7 +285,7 @@ export interface ConfigComponentProps {
   collapse?: CollapseConfig;
   floatButtonGroup?: FloatButtonGroupConfig;
   typography?: ComponentStyleConfig;
-  skeleton?: ComponentStyleConfig;
+  skeleton?: SkeletonConfig;
   spin?: SpinConfig;
   segmented?: SegmentedConfig;
   steps?: ComponentStyleConfig;

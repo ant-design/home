@@ -1,6 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 
+export type ElementSemanticName = 'root' | 'content';
+
 export interface SkeletonElementProps {
   prefixCls?: string;
   className?: string;
@@ -9,6 +11,8 @@ export interface SkeletonElementProps {
   size?: 'large' | 'small' | 'default' | number;
   shape?: 'circle' | 'square' | 'round' | 'default';
   active?: boolean;
+  classNames?: Record<ElementSemanticName, string>;
+  styles?: Record<ElementSemanticName, React.CSSProperties>;
 }
 
 const Element: React.FC<SkeletonElementProps> = (props) => {

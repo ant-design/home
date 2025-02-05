@@ -47,6 +47,7 @@ import type {
   RangePickerConfig,
   RibbonConfig,
   SelectConfig,
+  SkeletonConfig,
   SpaceConfig,
   SpinConfig,
   TableConfig,
@@ -196,7 +197,7 @@ export interface ConfigProviderProps {
   divider?: ComponentStyleConfig;
   drawer?: DrawerConfig;
   typography?: ComponentStyleConfig;
-  skeleton?: ComponentStyleConfig;
+  skeleton?: SkeletonConfig;
   spin?: SpinConfig;
   segmented?: ComponentStyleConfig;
   statistic?: ComponentStyleConfig;

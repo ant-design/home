@@ -148,7 +148,7 @@ const {
 | rate | Set Rate common props | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | result | Set Result common props | { className?: string, style?: React.CSSProperties , classNames?: [ResultProps\["classNames"\]](/components/result#api), styles?: [ResultProps\["styles"\]](/components/result#api)} | - | 5.7.0, `classNames` and `styles`: 6.0.0 |
 | ribbon | Set Ribbon common props | { className?: string, style?: React.CSSProperties, , classNames?: [RibbonProps\["classNames"\]](/components/badge#api), styles?: [RibbonProps\["styles"\]](/components/badge#api) } | - | 6.0.0 |
-| skeleton | Set Skeleton common props | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
+| skeleton | Set Skeleton common props | { className?: string, style?: React.CSSProperties, classNames?: [SkeletonProps\["classNames"\]](/components/skeleton#api), styles?: [SkeletonProps\["styles"\]](/components/skeleton#api) } | - | 5.7.0, `classNames` and `styles`: 6.0.0 |
 | segmented | Set Segmented common props | { className?: string, style?: React.CSSProperties, classNames?: [SegmentedProps\["classNames"\]](/components/segmented#api), styles?: [SegmentedProps\["styles"\]](/components/segmented#api) } | - | 5.7.0, `classNames` and `styles`: 6.0.0 |
 | select | Set Select common props | { className?: string, showSearch?: boolean, style?: React.CSSProperties } | - | 5.7.0 |
 | slider | Set Slider common props | { className?: string, style?: React.CSSProperties, classNames?: [SliderProps\["classNames"\]](/components/slider#api), styles?: [SliderProps\["styles"\]](/components/slider#api) } | - | 5.7.0, `classNames` and `styles`: 5.23.0 |

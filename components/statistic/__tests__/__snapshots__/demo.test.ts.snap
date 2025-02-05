@@ -163,7 +163,7 @@ exports[`renders components/statistic/demo/basic.tsx correctly 1`] = `
         class="ant-skeleton ant-statistic-skeleton"
       >
         <div
-          class="ant-skeleton-content"
+          class="ant-skeleton-section"
         >
           <h3
             class="ant-skeleton-title"
@@ -430,7 +430,7 @@ exports[`renders components/statistic/demo/component-token.tsx correctly 1`] = `
         class="ant-skeleton ant-statistic-skeleton"
       >
         <div
-          class="ant-skeleton-content"
+          class="ant-skeleton-section"
         >
           <h3
             class="ant-skeleton-title"

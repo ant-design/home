@@ -25419,7 +25419,7 @@ exports[`ConfigProvider components Skeleton configProvider 1`] = `
     />
   </div>
   <div
-    class="config-skeleton-content"
+    class="config-skeleton-section"
   >
     <h3
       class="config-skeleton-title"
@@ -25447,7 +25447,7 @@ exports[`ConfigProvider components Skeleton configProvider componentDisabled 1`]
     />
   </div>
   <div
-    class="config-skeleton-content"
+    class="config-skeleton-section"
   >
     <h3
       class="config-skeleton-title"
@@ -25475,7 +25475,7 @@ exports[`ConfigProvider components Skeleton configProvider componentSize large 1
     />
   </div>
   <div
-    class="config-skeleton-content"
+    class="config-skeleton-section"
   >
     <h3
       class="config-skeleton-title"
@@ -25503,7 +25503,7 @@ exports[`ConfigProvider components Skeleton configProvider componentSize middle 
     />
   </div>
   <div
-    class="config-skeleton-content"
+    class="config-skeleton-section"
   >
     <h3
       class="config-skeleton-title"
@@ -25531,7 +25531,7 @@ exports[`ConfigProvider components Skeleton configProvider componentSize small 1
     />
   </div>
   <div
-    class="config-skeleton-content"
+    class="config-skeleton-section"
   >
     <h3
       class="config-skeleton-title"
@@ -25559,7 +25559,7 @@ exports[`ConfigProvider components Skeleton normal 1`] = `
     />
   </div>
   <div
-    class="ant-skeleton-content"
+    class="ant-skeleton-section"
   >
     <h3
       class="ant-skeleton-title"
@@ -25587,7 +25587,7 @@ exports[`ConfigProvider components Skeleton prefixCls 1`] = `
     />
   </div>
   <div
-    class="prefix-Skeleton-content"
+    class="prefix-Skeleton-section"
   >
     <h3
       class="prefix-Skeleton-title"

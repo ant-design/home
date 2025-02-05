@@ -738,7 +738,7 @@ exports[`renders components/card/demo/loading.tsx extend context correctly 1`] =
         class="ant-skeleton ant-skeleton-active"
       >
         <div
-          class="ant-skeleton-content"
+          class="ant-skeleton-section"
         >
           <ul
             class="ant-skeleton-paragraph"
@@ -844,7 +844,7 @@ exports[`renders components/card/demo/loading.tsx extend context correctly 1`] =
         class="ant-skeleton ant-skeleton-active"
       >
         <div
-          class="ant-skeleton-content"
+          class="ant-skeleton-section"
         >
           <ul
             class="ant-skeleton-paragraph"

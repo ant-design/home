@@ -1,5 +1,4 @@
 import * as React from 'react';
-import omit from '@rc-component/util/lib/omit';
 import classNames from 'classnames';
 
 import { ConfigContext } from '../config-provider';
@@ -16,16 +15,19 @@ const SkeletonInput: React.FC<SkeletonInputProps> = (props) => {
   const {
     prefixCls: customizePrefixCls,
     className,
+    classNames: skeletonInputClassNames,
     rootClassName,
     active,
     block,
+    style,
+    styles,
     size = 'default',
+    ...rest
   } = props;
   const { getPrefixCls } = React.useContext(ConfigContext);
   const prefixCls = getPrefixCls('skeleton', customizePrefixCls);
   const [wrapCSSVar, hashId, cssVarCls] = useStyle(prefixCls);
 
-  const otherProps = omit(props, ['prefixCls']);
   const cls = classNames(
     prefixCls,
     `${prefixCls}-element`,
@@ -33,6 +35,7 @@ const SkeletonInput: React.FC<SkeletonInputProps> = (props) => {
       [`${prefixCls}-active`]: active,
       [`${prefixCls}-block`]: block,
     },
+    skeletonInputClassNames?.root,
     className,
     rootClassName,
     hashId,
@@ -40,8 +43,14 @@ const SkeletonInput: React.FC<SkeletonInputProps> = (props) => {
   );
 
   return wrapCSSVar(
-    <div className={cls}>
-      <Element prefixCls={`${prefixCls}-input`} size={size} {...otherProps} />
+    <div className={cls} style={styles?.root}>
+      <Element
+        prefixCls={`${prefixCls}-input`}
+        className={skeletonInputClassNames?.content}
+        style={{ ...styles?.content, ...style }}
+        size={size}
+        {...rest}
+      />
     </div>,
   );
 };

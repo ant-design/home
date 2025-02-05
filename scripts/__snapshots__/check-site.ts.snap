@@ -192,9 +192,9 @@ exports[`site test Component components/select en Page 1`] = `4`;
 
 exports[`site test Component components/select zh Page 1`] = `4`;
 
-exports[`site test Component components/skeleton en Page 1`] = `6`;
+exports[`site test Component components/skeleton en Page 1`] = `7`;
 
-exports[`site test Component components/skeleton zh Page 1`] = `6`;
+exports[`site test Component components/skeleton zh Page 1`] = `7`;
 
 exports[`site test Component components/slider en Page 1`] = `4`;
 

@@ -282,7 +282,7 @@ exports[`Card should still have padding when card which set padding to 0 is load
       class="ant-skeleton ant-skeleton-active"
     >
       <div
-        class="ant-skeleton-content"
+        class="ant-skeleton-section"
       >
         <ul
           class="ant-skeleton-paragraph"

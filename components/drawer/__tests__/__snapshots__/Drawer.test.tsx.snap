@@ -64,7 +64,7 @@ exports[`Drawer Drawer loading have a spinner 1`] = `
           class="ant-skeleton ant-skeleton-active ant-drawer-body-skeleton"
         >
           <div
-            class="ant-skeleton-content"
+            class="ant-skeleton-section"
           >
             <ul
               class="ant-skeleton-paragraph"

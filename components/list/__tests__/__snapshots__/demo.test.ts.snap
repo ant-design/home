@@ -1768,7 +1768,7 @@ exports[`renders components/list/demo/infinite-load.tsx correctly 1`] = `
           />
         </div>
         <div
-          class="ant-skeleton-content"
+          class="ant-skeleton-section"
         >
           <h3
             class="ant-skeleton-title"

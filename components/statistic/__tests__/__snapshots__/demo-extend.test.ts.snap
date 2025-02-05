@@ -169,7 +169,7 @@ exports[`renders components/statistic/demo/basic.tsx extend context correctly 1`
         class="ant-skeleton ant-statistic-skeleton"
       >
         <div
-          class="ant-skeleton-content"
+          class="ant-skeleton-section"
         >
           <h3
             class="ant-skeleton-title"
@@ -440,7 +440,7 @@ exports[`renders components/statistic/demo/component-token.tsx extend context co
         class="ant-skeleton ant-statistic-skeleton"
       >
         <div
-          class="ant-skeleton-content"
+          class="ant-skeleton-section"
         >
           <h3
             class="ant-skeleton-title"
