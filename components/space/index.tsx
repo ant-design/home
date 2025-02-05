@@ -14,6 +14,7 @@ import useStyle from './style';
 export { SpaceContext } from './context';
 
 export type SpaceSize = SizeType | number;
+type SemanticName = 'root' | 'item';
 
 export interface SpaceProps extends React.HTMLAttributes<HTMLDivElement> {
   prefixCls?: string;
@@ -26,8 +27,8 @@ export interface SpaceProps extends React.HTMLAttributes<HTMLDivElement> {
   align?: 'start' | 'end' | 'center' | 'baseline';
   split?: React.ReactNode;
   wrap?: boolean;
-  classNames?: { item?: string; root?: string };
-  styles?: { item?: React.CSSProperties; root?: React.CSSProperties };
+  classNames?: Partial<Record<SemanticName, string>>;
+  styles?: Partial<Record<SemanticName, React.CSSProperties>>;
 }
 
 const InternalSpace = React.forwardRef<HTMLDivElement, SpaceProps>((props, ref) => {

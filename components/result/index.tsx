@@ -27,6 +27,7 @@ export const ExceptionMap = {
 
 export type ExceptionStatusType = 403 | 404 | 500 | '403' | '404' | '500';
 export type ResultStatusType = ExceptionStatusType | keyof typeof IconMap;
+type SemanticName = 'root' | 'title' | 'subTitle' | 'body' | 'extra' | 'icon';
 
 export interface ResultProps {
   icon?: React.ReactNode;
@@ -39,22 +40,8 @@ export interface ResultProps {
   rootClassName?: string;
   style?: React.CSSProperties;
   children?: React.ReactNode;
-  classNames?: {
-    root?: string;
-    title?: string;
-    subTitle?: string;
-    body?: string;
-    extra?: string;
-    icon?: string;
-  };
-  styles?: {
-    root?: React.CSSProperties;
-    title?: React.CSSProperties;
-    subTitle?: React.CSSProperties;
-    body?: React.CSSProperties;
-    extra?: React.CSSProperties;
-    icon?: React.CSSProperties;
-  };
+  classNames?: Partial<Record<SemanticName, string>>;
+  styles?: Partial<Record<SemanticName, React.CSSProperties>>;
 }
 
 // ExceptionImageMap keys
