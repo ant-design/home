@@ -43,6 +43,7 @@ Common props ref：[Common props](/docs/react/common-props)
 | keyboard | Support keyboard operation | boolean | true | 5.18.0 |
 | style | The custom style object of rate | CSSProperties | - |  |
 | tooltips | Customize tooltip by each character | string\[] | - |  |
+| tooltipProps | Tooltips property | [TooltipProps](/components/tooltip-cn#api) | - |  |
 | value | The current value | number | - |  |
 | onBlur | Callback when component lose focus | function() | - |  |
 | onChange | Callback when select value | function(value: number) | - |  |

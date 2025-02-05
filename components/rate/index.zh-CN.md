@@ -44,6 +44,7 @@ demo:
 | keyboard | 支持使用键盘操作 | boolean | true | 5.18.0 |
 | style | 自定义样式对象 | CSSProperties | - |  |
 | tooltips | 自定义每项的提示信息 | string\[] | - |  |
+| tooltipProps | Tooltips属性 | [TooltipProps](/components/tooltip-cn#api) | - |  |
 | value | 当前数，受控值 | number | - |  |
 | onBlur | 失去焦点时的回调 | function() | - |  |
 | onChange | 选择时的回调 | function(value: number) | - |  |

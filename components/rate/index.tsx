@@ -6,13 +6,14 @@ import type { RateRef, RateProps as RcRateProps } from 'rc-rate/lib/Rate';
 import type { StarProps as RcStarProps } from 'rc-rate/lib/Star';
 
 import { ConfigContext } from '../config-provider';
-import Tooltip from '../tooltip';
-import useStyle from './style';
 import DisabledContext from '../config-provider/DisabledContext';
+import Tooltip, { TooltipProps } from '../tooltip';
+import useStyle from './style';
 
 export interface RateProps extends RcRateProps {
   rootClassName?: string;
   tooltips?: Array<string>;
+  tooltipProps?: TooltipProps;
 }
 
 const Rate = React.forwardRef<RateRef, RateProps>((props, ref) => {
@@ -22,6 +23,7 @@ const Rate = React.forwardRef<RateRef, RateProps>((props, ref) => {
     rootClassName,
     style,
     tooltips,
+    tooltipProps,
     character = <StarFilled />,
     disabled: customDisabled,
     ...rest
@@ -31,7 +33,11 @@ const Rate = React.forwardRef<RateRef, RateProps>((props, ref) => {
     if (!tooltips) {
       return node;
     }
-    return <Tooltip title={tooltips[index as number]}>{node}</Tooltip>;
+    return (
+      <Tooltip title={tooltips[index as number]} {...tooltipProps}>
+        {node}
+      </Tooltip>
+    );
   };
 
   const { getPrefixCls, direction, rate } = React.useContext(ConfigContext);
