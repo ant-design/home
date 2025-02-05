@@ -235,7 +235,14 @@ const InternalCompoundedButton = React.forwardRef<
         e.preventDefault();
         return;
       }
-      props.onClick?.(e);
+     
+      if ('href' in props) {
+        props.onClick?.(e as React.MouseEvent<HTMLAnchorElement, MouseEvent>);
+        return;
+      }
+
+      props.onClick?.(e as React.MouseEvent<HTMLButtonElement, MouseEvent>);
+    
     },
     [props.onClick, innerLoading, mergedDisabled],
   );
