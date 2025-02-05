@@ -48,6 +48,7 @@ return (
 <code src="./demo/allowClear.tsx">带移除图标</code>
 <code src="./demo/autoSize.tsx">自动大小</code>
 <code src="./demo/status.tsx">自定义状态</code>
+<code src="./demo/onceDelete.tsx">一次删除</code>
 <code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>
 <code src="./demo/component-token.tsx" debug>组件 Token</code>
 
@@ -82,6 +83,7 @@ return (
 | onSelect | 选择选项时触发 | (option: OptionProps, prefix: string) => void | - |  |
 | onPopupScroll | 滚动时触发 | (event: Event) => void | - | 5.23.0 |
 | options | 选项配置 | [Options](#option) | [] | 5.1.0 |
+| itemOnceDelete | 支持一键清除 | boolean | false |  |  |
 
 ### Mentions 方法
 

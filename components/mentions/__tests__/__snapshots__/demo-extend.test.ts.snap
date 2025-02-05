@@ -392,6 +392,22 @@ exports[`renders components/mentions/demo/form.tsx extend context correctly 1`] 
 
 exports[`renders components/mentions/demo/form.tsx extend context correctly 2`] = `[]`;
 
+exports[`renders components/mentions/demo/onceDelete.tsx extend context correctly 1`] = `
+<div
+  class="ant-mentions ant-mentions-outlined"
+  style="width: 100%;"
+>
+  <textarea
+    class="rc-textarea"
+    rows="1"
+  >
+    @afc163@zombieJ
+  </textarea>
+</div>
+`;
+
+exports[`renders components/mentions/demo/onceDelete.tsx extend context correctly 2`] = `[]`;
+
 exports[`renders components/mentions/demo/placement.tsx extend context correctly 1`] = `
 <div
   class="ant-mentions ant-mentions-outlined"

@@ -5,6 +5,7 @@ import focusTest from '../../../tests/shared/focusTest';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render } from '../../../tests/utils';
+import KeyCode from 'rc-util/lib/KeyCode';
 
 const { getMentions } = Mentions;
 
@@ -93,6 +94,35 @@ describe('Mentions', () => {
     expect(textareaInstance.value).toEqual('111');
     fireEvent.click(wrapper.container.querySelector('.ant-mentions-clear-icon')!);
     expect(textareaInstance.value).toEqual('');
+  });
+
+  it('should delete last item when Delete key is pressed', () => {
+    const { getByRole } = render(
+      <Mentions
+        style={{ width: '100%' }}
+        defaultValue="@afc163@zombieJ"
+        itemOnceDelete
+        options={[
+          {
+            value: 'afc163',
+            label: 'afc163',
+          },
+          {
+            value: 'zombieJ',
+            label: 'zombieJ',
+          },
+          {
+            value: 'yesmeck',
+            label: 'yesmeck',
+          },
+        ]}
+      />,
+    );
+    const textarea = getByRole('textbox') as HTMLTextAreaElement;
+    textarea.selectionStart = textarea.value.length;
+    textarea.selectionEnd = textarea.value.length;
+    fireEvent.keyDown(textarea, { key: 'Delete', keyCode: KeyCode.BACKSPACE });
+    expect(textarea.value).toBe('@afc163 ');
   });
 
   it('should support custom clearIcon', () => {

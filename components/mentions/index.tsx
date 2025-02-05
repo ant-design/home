@@ -22,6 +22,8 @@ import { FormItemInputContext } from '../form/context';
 import useVariant from '../form/hooks/useVariants';
 import Spin from '../spin';
 import useStyle from './style';
+import KeyCode from 'rc-util/lib/KeyCode';
+import useMergedState from 'rc-util/lib/hooks/useMergedState';
 
 export const { Option } = RcMentions;
 
@@ -45,6 +47,7 @@ export interface MentionProps extends Omit<RcMentionsProps, 'suffix'> {
   status?: InputStatus;
   options?: MentionsOptionProps[];
   popupClassName?: string;
+  itemOnceDelete?: boolean;
   /**
    * @since 5.13.0
    * @default "outlined"
@@ -77,13 +80,21 @@ const InternalMentions = React.forwardRef<MentionsRef, MentionProps>((props, ref
     children,
     notFoundContent,
     options,
+    itemOnceDelete = false,
     status: customStatus,
     allowClear = false,
     popupClassName,
     style,
     variant: customVariant,
+    value,
+    defaultValue,
+    onChange,
     ...restProps
   } = props;
+  const [mergedValue, setMergedValue] = useMergedState('', {
+    defaultValue,
+    value,
+  });
   const [focused, setFocused] = React.useState(false);
   const innerRef = React.useRef<MentionsRef>(null);
   const mergedRef = composeRef(ref, innerRef);
@@ -121,6 +132,58 @@ const InternalMentions = React.forwardRef<MentionsRef, MentionProps>((props, ref
     }
 
     setFocused(false);
+  };
+
+  const onInternalChange = (data: string) => {
+    setMergedValue(data)
+    onChange?.(data);
+  }
+
+  const splitValue = (data: string) => {
+    if (props.prefix) {
+      const prefix = Array.isArray(props.prefix) ? props.prefix : [props.prefix];
+      prefix.forEach((pre) => {
+        if (pre) {
+          data = data.split(pre).join(`  ${pre}`);
+        }
+      });
+    } else {
+      data = data.split('@').join(' @');
+    }
+    return data.trim();
+  }
+
+  const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.keyCode === KeyCode.BACKSPACE && itemOnceDelete) {
+      if (mergedValue) {
+        const data = splitValue(mergedValue)
+        const cursorPosition = e.currentTarget.selectionStart;
+        const valueList = data.trimEnd().split(props.split ?? ' ');
+        let length = 0;
+        let itemIndex = -1;
+        for (let i = 0; i < valueList.length; i++) {
+          length += valueList[i].length + (props.split?.length ?? 1);
+          if (length >= cursorPosition) {
+            itemIndex = i;
+            break;
+          }
+        }
+        const len = valueList.slice(itemIndex + 1, valueList.length).join('').length
+        valueList.splice(itemIndex, 1);
+        if (valueList.length !== 0) {
+          const res = valueList.join(props.split ?? ' ') + (props.split ?? ' ');
+          setMergedValue(res);
+          setTimeout(() => {
+            if (innerRef.current && innerRef.current.textarea) {
+              innerRef.current.textarea.selectionStart -= len
+              innerRef.current.textarea.selectionEnd -= len
+            }
+          })
+        } else {
+          setMergedValue('');
+        }
+      }
+    }
   };
 
   const notFoundContentEle = React.useMemo<React.ReactNode>(() => {
@@ -183,8 +246,11 @@ const InternalMentions = React.forwardRef<MentionsRef, MentionProps>((props, ref
       allowClear={mergedAllowClear}
       direction={direction}
       style={{ ...contextMentions?.style, ...style }}
+      value={mergedValue}
       {...restProps}
       filterOption={mentionsfilterOption}
+      onKeyDown={onKeyDown}
+      onChange={onInternalChange}
       onFocus={onFocus}
       onBlur={onBlur}
       dropdownClassName={classNames(popupClassName, rootClassName, hashId, cssVarCls, rootCls)}

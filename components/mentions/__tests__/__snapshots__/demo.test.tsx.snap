@@ -332,6 +332,20 @@ exports[`renders components/mentions/demo/form.tsx correctly 1`] = `
 </form>
 `;
 
+exports[`renders components/mentions/demo/onceDelete.tsx correctly 1`] = `
+<div
+  class="ant-mentions ant-mentions-outlined"
+  style="width:100%"
+>
+  <textarea
+    class="rc-textarea"
+    rows="1"
+  >
+    @afc163@zombieJ
+  </textarea>
+</div>
+`;
+
 exports[`renders components/mentions/demo/placement.tsx correctly 1`] = `
 <div
   class="ant-mentions ant-mentions-outlined"
